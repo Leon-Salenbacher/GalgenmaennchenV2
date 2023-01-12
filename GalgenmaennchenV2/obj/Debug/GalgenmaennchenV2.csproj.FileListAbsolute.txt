@@ -1,0 +1,12 @@
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\bin\Debug\GalgenmaennchenV2.exe.config
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\bin\Debug\GalgenmaennchenV2.exe
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\bin\Debug\GalgenmaennchenV2.pdb
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\bin\Debug\MySql.Data.dll
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csprojAssemblyReference.cache
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.Properties.Resources.resources
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csproj.GenerateResource.cache
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csproj.CoreCompileInputs.cache
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csproj.CopyComplete
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.exe
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.pdb
+C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.GamePage.resources
