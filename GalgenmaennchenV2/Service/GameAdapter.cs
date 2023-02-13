@@ -53,7 +53,7 @@ namespace GalgenmaennchenV2.Service
             {
                 if (wordLetters[i].getIsChecked())
                 {
-                    wordString += wordLetters[i].getLetter + " ";
+                    wordString += wordLetters[i].getLetter() + " ";
                 }
                 else
                 {
