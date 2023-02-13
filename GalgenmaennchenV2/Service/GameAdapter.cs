@@ -117,7 +117,7 @@ namespace GalgenmaennchenV2.Service
 
         public bool proofGameEnd()
         {
-            if (this.game.getFails() <= maxFails)
+            if (this.game.getFails() >= maxFails)
             {
                 this.game.setGameState(GameState.LOOS);
                 return true;

@@ -54,13 +54,27 @@ namespace GalgenmaennchenV2
 
         private void proofLetter(char letter)
         {
-            gameAdapter.proofLetter(letter);
+            gameAdapter.move(letter);
             loadWordLbl(gameAdapter.getWordString());
+            loadImg(gameAdapter.game.getFails());
+            if (gameAdapter.proofGameEnd())
+            {
+                loadEndScreen();
+            }
         }
 
         private void loadWordLbl(string text)
         {
             lbl.Text = text;
+        }
+        private void loadImg(int state)
+        {
+            imgHangman.BackgroundImage = imageHangman[state];
+        }
+
+        private void loadEndScreen() { 
+            //load gameEnd screen here 
+
         }
 
         private void btnTest_Click(object sender, EventArgs e)
