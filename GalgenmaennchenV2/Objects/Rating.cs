@@ -11,7 +11,7 @@ namespace GalgenmaennchenV2.Objects
             private int id;
             private int versuche;
             private string word;
-            private User user;
+            private int userId;
 
             public int Id
             {
@@ -31,10 +31,10 @@ namespace GalgenmaennchenV2.Objects
                 set { word = value; }
             }
 
-            public User User
-        {
-                get { return user; }
-                set { user = value; }
+            public int UserId
+            {
+                get { return userId; }
+                set { userId = value; }
             }
 
             public Rating()
@@ -42,18 +42,18 @@ namespace GalgenmaennchenV2.Objects
 
             }
 
-            public Rating(int versuche, string word, User user)
+            public Rating(int versuche, string word, int userId)
             {
                 this.versuche = versuche;
                 this.word = word;
-                this.user = user;
+                this.userId = userId;
             }
 
-            public Rating(int id, int versuche, string word, User user)
+            public Rating(int id, int versuche, string word, int userId)
             {
                 this.versuche = versuche;
                 this.word = word;
-                this.user = user;
+                this.userId = userId;
                 this.id = id;
             }
 

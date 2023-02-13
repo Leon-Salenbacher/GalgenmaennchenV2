@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v5.0": {
       "galgenmaennchenTest/1.0.0": {
         "dependencies": {
-          "GalgenmaennchenV2": "1.0.0",
           "MSTest.TestAdapter": "2.1.1",
           "MSTest.TestFramework": "2.1.1",
           "Microsoft.NET.Test.Sdk": "16.7.1",
@@ -1070,19 +1069,6 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
-      },
-      "GalgenmaennchenV2/1.0.0": {
-        "runtime": {
-          "GalgenmaennchenV2.exe": {}
-        }
-      },
-      "MySql.Data/6.7.4.0": {
-        "runtime": {
-          "MySql.Data.dll": {
-            "assemblyVersion": "6.7.4.0",
-            "fileVersion": "6.7.4.0"
-          }
-        }
       }
     }
   },
@@ -1700,16 +1686,6 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
-    },
-    "GalgenmaennchenV2/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "MySql.Data/6.7.4.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
