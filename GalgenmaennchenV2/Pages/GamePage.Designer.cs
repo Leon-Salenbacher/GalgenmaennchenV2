@@ -151,6 +151,7 @@ namespace GalgenmaennchenV2
             this.btnZ.TabIndex = 25;
             this.btnZ.Text = "Z";
             this.btnZ.UseVisualStyleBackColor = true;
+            this.btnZ.Click += new System.EventHandler(this.btnZ_Click);
             // 
             // btnY
             // 
@@ -164,6 +165,7 @@ namespace GalgenmaennchenV2
             this.btnY.TabIndex = 24;
             this.btnY.Text = "Y";
             this.btnY.UseVisualStyleBackColor = true;
+            this.btnY.Click += new System.EventHandler(this.btnY_Click);
             // 
             // btnX
             // 
@@ -177,6 +179,7 @@ namespace GalgenmaennchenV2
             this.btnX.TabIndex = 23;
             this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = true;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
             // btnW
             // 
@@ -190,6 +193,7 @@ namespace GalgenmaennchenV2
             this.btnW.TabIndex = 22;
             this.btnW.Text = "W";
             this.btnW.UseVisualStyleBackColor = true;
+            this.btnW.Click += new System.EventHandler(this.btnW_Click);
             // 
             // btnV
             // 
@@ -203,6 +207,7 @@ namespace GalgenmaennchenV2
             this.btnV.TabIndex = 21;
             this.btnV.Text = "V";
             this.btnV.UseVisualStyleBackColor = true;
+            this.btnV.Click += new System.EventHandler(this.btnV_Click);
             // 
             // btnU
             // 
@@ -216,6 +221,7 @@ namespace GalgenmaennchenV2
             this.btnU.TabIndex = 20;
             this.btnU.Text = "U";
             this.btnU.UseVisualStyleBackColor = true;
+            this.btnU.Click += new System.EventHandler(this.btnU_Click);
             // 
             // btnT
             // 
@@ -229,6 +235,7 @@ namespace GalgenmaennchenV2
             this.btnT.TabIndex = 19;
             this.btnT.Text = "T";
             this.btnT.UseVisualStyleBackColor = true;
+            this.btnT.Click += new System.EventHandler(this.btnT_Click);
             // 
             // btnS
             // 
@@ -242,6 +249,7 @@ namespace GalgenmaennchenV2
             this.btnS.TabIndex = 18;
             this.btnS.Text = "S";
             this.btnS.UseVisualStyleBackColor = true;
+            this.btnS.Click += new System.EventHandler(this.btnS_Click);
             // 
             // btnR
             // 
@@ -255,6 +263,7 @@ namespace GalgenmaennchenV2
             this.btnR.TabIndex = 17;
             this.btnR.Text = "R";
             this.btnR.UseVisualStyleBackColor = true;
+            this.btnR.Click += new System.EventHandler(this.btnR_Click);
             // 
             // btnQ
             // 
@@ -268,6 +277,7 @@ namespace GalgenmaennchenV2
             this.btnQ.TabIndex = 16;
             this.btnQ.Text = "Q";
             this.btnQ.UseVisualStyleBackColor = true;
+            this.btnQ.Click += new System.EventHandler(this.btnQ_Click);
             // 
             // btnP
             // 
@@ -281,6 +291,7 @@ namespace GalgenmaennchenV2
             this.btnP.TabIndex = 15;
             this.btnP.Text = "P";
             this.btnP.UseVisualStyleBackColor = true;
+            this.btnP.Click += new System.EventHandler(this.btnP_Click);
             // 
             // btnO
             // 
@@ -294,6 +305,7 @@ namespace GalgenmaennchenV2
             this.btnO.TabIndex = 14;
             this.btnO.Text = "O";
             this.btnO.UseVisualStyleBackColor = true;
+            this.btnO.Click += new System.EventHandler(this.btnO_Click);
             // 
             // btnN
             // 
@@ -307,6 +319,7 @@ namespace GalgenmaennchenV2
             this.btnN.TabIndex = 13;
             this.btnN.Text = "N";
             this.btnN.UseVisualStyleBackColor = true;
+            this.btnN.Click += new System.EventHandler(this.btnN_Click);
             // 
             // btnM
             // 
@@ -320,6 +333,7 @@ namespace GalgenmaennchenV2
             this.btnM.TabIndex = 12;
             this.btnM.Text = "M";
             this.btnM.UseVisualStyleBackColor = true;
+            this.btnM.Click += new System.EventHandler(this.btnM_Click);
             // 
             // btnL
             // 
@@ -333,6 +347,7 @@ namespace GalgenmaennchenV2
             this.btnL.TabIndex = 11;
             this.btnL.Text = "L";
             this.btnL.UseVisualStyleBackColor = true;
+            this.btnL.Click += new System.EventHandler(this.btnL_Click);
             // 
             // btnK
             // 
@@ -346,6 +361,7 @@ namespace GalgenmaennchenV2
             this.btnK.TabIndex = 10;
             this.btnK.Text = "K";
             this.btnK.UseVisualStyleBackColor = true;
+            this.btnK.Click += new System.EventHandler(this.btnK_Click);
             // 
             // btnJ
             // 
@@ -359,6 +375,7 @@ namespace GalgenmaennchenV2
             this.btnJ.TabIndex = 9;
             this.btnJ.Text = "J";
             this.btnJ.UseVisualStyleBackColor = true;
+            this.btnJ.Click += new System.EventHandler(this.btnJ_Click);
             // 
             // btnI
             // 
@@ -372,6 +389,7 @@ namespace GalgenmaennchenV2
             this.btnI.TabIndex = 8;
             this.btnI.Text = "I";
             this.btnI.UseVisualStyleBackColor = true;
+            this.btnI.Click += new System.EventHandler(this.btnI_Click);
             // 
             // btnH
             // 
@@ -385,6 +403,7 @@ namespace GalgenmaennchenV2
             this.btnH.TabIndex = 7;
             this.btnH.Text = "H";
             this.btnH.UseVisualStyleBackColor = true;
+            this.btnH.Click += new System.EventHandler(this.btnH_Click);
             // 
             // btnG
             // 
@@ -398,6 +417,7 @@ namespace GalgenmaennchenV2
             this.btnG.TabIndex = 6;
             this.btnG.Text = "G";
             this.btnG.UseVisualStyleBackColor = true;
+            this.btnG.Click += new System.EventHandler(this.btnG_Click);
             // 
             // btnF
             // 
@@ -411,6 +431,7 @@ namespace GalgenmaennchenV2
             this.btnF.TabIndex = 5;
             this.btnF.Text = "F";
             this.btnF.UseVisualStyleBackColor = true;
+            this.btnF.Click += new System.EventHandler(this.btnF_Click);
             // 
             // btnE
             // 
@@ -424,6 +445,7 @@ namespace GalgenmaennchenV2
             this.btnE.TabIndex = 4;
             this.btnE.Text = "E";
             this.btnE.UseVisualStyleBackColor = true;
+            this.btnE.Click += new System.EventHandler(this.btnE_Click);
             // 
             // btnD
             // 
@@ -437,6 +459,7 @@ namespace GalgenmaennchenV2
             this.btnD.TabIndex = 3;
             this.btnD.Text = "D";
             this.btnD.UseVisualStyleBackColor = true;
+            this.btnD.Click += new System.EventHandler(this.btnD_Click);
             // 
             // btnC
             // 
@@ -450,6 +473,7 @@ namespace GalgenmaennchenV2
             this.btnC.TabIndex = 2;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // button1
             // 
@@ -463,6 +487,7 @@ namespace GalgenmaennchenV2
             this.button1.TabIndex = 1;
             this.button1.Text = "A";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnB
             // 
@@ -476,6 +501,7 @@ namespace GalgenmaennchenV2
             this.btnB.TabIndex = 0;
             this.btnB.Text = "B";
             this.btnB.UseVisualStyleBackColor = true;
+            this.btnB.Click += new System.EventHandler(this.btnB_Click);
             // 
             // timer1
             // 

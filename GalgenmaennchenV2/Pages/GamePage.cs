@@ -52,6 +52,12 @@ namespace GalgenmaennchenV2
 
         }
 
+        private void proofLetter(char letter)
+        {
+            gameAdapter.proofLetter(letter);
+            loadWordLbl(gameAdapter.getWordString());
+        }
+
         private void loadWordLbl(string text)
         {
             lbl.Text = text;
@@ -96,6 +102,134 @@ namespace GalgenmaennchenV2
             lbl.Text = gameAdapter.getWordString();
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            proofLetter('A');
+        }
+
+        private void btnB_Click(object sender, EventArgs e)
+        {
+            proofLetter('B');
+        }
+
+        private void btnC_Click(object sender, EventArgs e)
+        {
+            proofLetter('C');
+        }
+
+        private void btnD_Click(object sender, EventArgs e)
+        {
+            proofLetter('D');
+        }
+
+        private void btnE_Click(object sender, EventArgs e)
+        {
+            proofLetter('E');
+        }
+
+        private void btnF_Click(object sender, EventArgs e)
+        {
+            proofLetter('F');
+        }
+
+        private void btnG_Click(object sender, EventArgs e)
+        {
+            proofLetter('G');
+        }
+
+        private void btnH_Click(object sender, EventArgs e)
+        {
+            proofLetter('H');
+        }
+
+        private void btnI_Click(object sender, EventArgs e)
+        {
+            proofLetter('I');
+        }
+
+        private void btnJ_Click(object sender, EventArgs e)
+        {
+            proofLetter('J');
+        }
+
+        private void btnK_Click(object sender, EventArgs e)
+        {
+            proofLetter('K');
+        }
+
+        private void btnL_Click(object sender, EventArgs e)
+        {
+            proofLetter('L');
+        }
+
+        private void btnM_Click(object sender, EventArgs e)
+        {
+            proofLetter('M');
+        }
+
+        private void btnN_Click(object sender, EventArgs e)
+        {
+            proofLetter('N');
+        }
+
+        private void btnO_Click(object sender, EventArgs e)
+        {
+            proofLetter('O');
+        }
+
+        private void btnP_Click(object sender, EventArgs e)
+        {
+            proofLetter('P');
+        }
+
+        private void btnQ_Click(object sender, EventArgs e)
+        {
+            proofLetter('Q');
+        }
+
+        private void btnR_Click(object sender, EventArgs e)
+        {
+            proofLetter('R');
+        }
+
+        private void btnS_Click(object sender, EventArgs e)
+        {
+            proofLetter('S');
+        }
+
+        private void btnT_Click(object sender, EventArgs e)
+        {
+            proofLetter('T');
+        }
+
+        private void btnU_Click(object sender, EventArgs e)
+        {
+            proofLetter('U');
+        }
+
+        private void btnV_Click(object sender, EventArgs e)
+        {
+            proofLetter('V');
+        }
+
+        private void btnW_Click(object sender, EventArgs e)
+        {
+            proofLetter('W');
+        }
+
+        private void btnX_Click(object sender, EventArgs e)
+        {
+            proofLetter('X');
+        }
+
+        private void btnY_Click(object sender, EventArgs e)
+        {
+            proofLetter('Y');
+        }
+
+        private void btnZ_Click(object sender, EventArgs e)
+        {
+            proofLetter('Z');
+        }
     }
 }
