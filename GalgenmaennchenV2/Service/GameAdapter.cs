@@ -46,9 +46,22 @@ namespace GalgenmaennchenV2.Service
 
         public String getWordString()
         {
-            
+            List<Letter> wordLetters =  this.game.getWordLetters();
 
-            return "H E L L O";
+            String wordString = "";
+            for(int i = 0; i < wordLetters.Count; i++)
+            {
+                if (wordLetters[i].getIsChecked())
+                {
+                    wordString += wordLetters[i].getLetter + " ";
+                }
+                else
+                {
+                    wordString += "_ ";
+                }
+            }
+
+            return wordString;
         }
 
         public bool proofLetter(char letter)
