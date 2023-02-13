@@ -14,6 +14,8 @@ namespace GalgenmaennchenV2.Service
         public static int maxFails = 10;
 
         public Game game;
+
+
         private List<Letter> getWord()
         {
             string word;
