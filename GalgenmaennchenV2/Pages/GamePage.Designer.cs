@@ -32,7 +32,6 @@ namespace GalgenmaennchenV2
             this.components = new System.ComponentModel.Container();
             this.imgHangman = new System.Windows.Forms.PictureBox();
             this.btnTest = new System.Windows.Forms.Button();
-            this.panelSolution = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnZ = new System.Windows.Forms.Button();
             this.btnY = new System.Windows.Forms.Button();
@@ -65,9 +64,12 @@ namespace GalgenmaennchenV2
             this.panelHeaderSpiel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.btnMenuSpiel = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgHangman)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelHeaderSpiel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // imgHangman
@@ -89,13 +91,6 @@ namespace GalgenmaennchenV2
             this.btnTest.Text = "Test";
             this.btnTest.UseVisualStyleBackColor = true;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
-            // 
-            // panelSolution
-            // 
-            this.panelSolution.Location = new System.Drawing.Point(12, 361);
-            this.panelSolution.Name = "panelSolution";
-            this.panelSolution.Size = new System.Drawing.Size(469, 56);
-            this.panelSolution.TabIndex = 5;
             // 
             // tableLayoutPanel1
             // 
@@ -518,14 +513,33 @@ namespace GalgenmaennchenV2
             this.btnMenuSpiel.Text = "button1";
             this.btnMenuSpiel.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lbl);
+            this.groupBox1.Location = new System.Drawing.Point(12, 361);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(472, 68);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Load);
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(203, 20);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(35, 13);
+            this.lbl.TabIndex = 0;
+            this.lbl.Text = "label2";
+            // 
             // GamePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 680);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelHeaderSpiel);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.panelSolution);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.imgHangman);
             this.Name = "GamePage";
@@ -533,6 +547,8 @@ namespace GalgenmaennchenV2
             ((System.ComponentModel.ISupportInitialize)(this.imgHangman)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panelHeaderSpiel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -541,7 +557,6 @@ namespace GalgenmaennchenV2
 
         private System.Windows.Forms.PictureBox imgHangman;
         private System.Windows.Forms.Button btnTest;
-        private System.Windows.Forms.Panel panelSolution;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnZ;
         private System.Windows.Forms.Button btnY;
@@ -574,6 +589,9 @@ namespace GalgenmaennchenV2
         private System.Windows.Forms.Panel panelHeaderSpiel;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnMenuSpiel;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl;
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalgenmaennchenV2.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,11 +15,15 @@ namespace GalgenmaennchenV2
     {
         List<Image> imageHangman;
 
+        private GameAdapter gameAdapter = new GameAdapter();
         private bool isCollapsed;
         int countImage;
         public GamePage()
         {
             InitializeComponent();
+            initialise();
+
+
 
             imageHangman = new List<Image>()
             {
@@ -39,7 +44,17 @@ namespace GalgenmaennchenV2
 
         private void initialise()
         {
-            imgHangman.BackgroundImage = imageHangman[countImage];
+            //imgHangman.BackgroundImage = imageHangman[countImage];
+
+            gameAdapter.startNewGame();
+            loadWordLbl(gameAdapter.getWordString());
+            
+
+        }
+
+        private void loadWordLbl(string text)
+        {
+            lbl.Text = text;
         }
 
         private void btnTest_Click(object sender, EventArgs e)
@@ -74,5 +89,13 @@ namespace GalgenmaennchenV2
                 }
             }
         }
+
+        private void groupBox1_Load(object sender, EventArgs e)
+        {
+            Label lbl = new Label();
+            lbl.Text = gameAdapter.getWordString();
+        }
+
+       
     }
 }
