@@ -3,6 +3,7 @@ using System;
 using GalgenmaennchenV2.Service;
 using GalgenmaennchenV2.Objects;
 using System.Collections.Generic;
+using GalgenmaennchenV2.Datenbanken;
 
 namespace galgenmaennchenTest.TestService
 {
@@ -43,6 +44,14 @@ namespace galgenmaennchenTest.TestService
 
             //not testing test manuel in debug
             Assert.AreEqual(true, game);
+        }
+
+        [TestMethod]
+        public void Test_DB_Conenction()
+        {
+            MySqlConnector dbConnector = new MySqlConnector("galgenmaennchen");
+            dbConnector.TestConnection();
+        
         }
     }
 }

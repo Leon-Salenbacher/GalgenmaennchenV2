@@ -10,3 +10,14 @@ C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\Galgen
 C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.exe
 C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.pdb
 C:\Users\jonas\source\repos\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.GamePage.resources
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\bin\Debug\GalgenmaennchenV2.exe.config
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\bin\Debug\GalgenmaennchenV2.exe
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\bin\Debug\GalgenmaennchenV2.pdb
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csproj.AssemblyReference.cache
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.GamePage.resources
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.Properties.Resources.resources
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csproj.GenerateResource.cache
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csproj.CoreCompileInputs.cache
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csproj.CopyComplete
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.exe
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.pdb
