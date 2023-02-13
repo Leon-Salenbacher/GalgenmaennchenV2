@@ -44,6 +44,13 @@ namespace GalgenmaennchenV2.Service
             return newGame;
         }
 
+        public String getWordString()
+        {
+            
+
+            return "H E L L O";
+        }
+
         public bool proofLetter(char letter)
         {
             for (int i = 0; i < this.game.getWordLetters().Count(); i++)
