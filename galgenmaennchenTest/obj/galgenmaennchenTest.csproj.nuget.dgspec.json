@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonas\\source\\repos\\GalgenmaennchenV2\\galgenmaennchenTest\\galgenmaennchenTest.csproj": {}
+    "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\galgenmaennchenTest\\galgenmaennchenTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonas\\source\\repos\\GalgenmaennchenV2\\galgenmaennchenTest\\galgenmaennchenTest.csproj": {
+    "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\galgenmaennchenTest\\galgenmaennchenTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\source\\repos\\GalgenmaennchenV2\\galgenmaennchenTest\\galgenmaennchenTest.csproj",
+        "projectUniqueName": "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\galgenmaennchenTest\\galgenmaennchenTest.csproj",
         "projectName": "galgenmaennchenTest",
-        "projectPath": "C:\\Users\\jonas\\source\\repos\\GalgenmaennchenV2\\galgenmaennchenTest\\galgenmaennchenTest.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\source\\repos\\GalgenmaennchenV2\\galgenmaennchenTest\\obj\\",
+        "projectPath": "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\galgenmaennchenTest\\galgenmaennchenTest.csproj",
+        "packagesPath": "C:\\Users\\leon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\galgenmaennchenTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -31,7 +31,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\GalgenmaennchenV2\\GalgenmaennchenV2.csproj": {
+                "projectPath": "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\GalgenmaennchenV2\\GalgenmaennchenV2.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -76,8 +80,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\GalgenmaennchenV2\\GalgenmaennchenV2.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\GalgenmaennchenV2\\GalgenmaennchenV2.csproj",
+        "projectName": "GalgenmaennchenV2",
+        "projectPath": "C:\\Users\\leon\\OneDrive\\1 Schule\\3. Jahr\\1. BfK-S\\6. Projekt-galgenmaennchen\\repo\\GalgenmaennchenV2\\GalgenmaennchenV2\\GalgenmaennchenV2.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }
