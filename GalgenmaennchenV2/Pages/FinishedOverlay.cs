@@ -21,6 +21,7 @@ namespace GalgenmaennchenV2.Pages
         {
             InitializeComponent();
             this.gameAdapter = gameAdapter;
+            this.userID = userID;
             loadPage();
         }
 
@@ -45,6 +46,11 @@ namespace GalgenmaennchenV2.Pages
             }  else {
                 lblError.Text = "Error";
             }
+
+            Rating rating = ratingAdapter.getHighScore(userID);
+            lblHighscore.Text = rating.getVersuche().ToString();
+
         }
+
     }
 }

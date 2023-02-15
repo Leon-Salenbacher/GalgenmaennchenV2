@@ -33,12 +33,13 @@ namespace GalgenmaennchenV2.Pages
             this.btnNewGame = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
             this.lblLose = new System.Windows.Forms.Label();
+            this.lblHighscore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblFinished
             // 
             this.lblFinished.AutoSize = true;
-            this.lblFinished.Location = new System.Drawing.Point(206, 115);
+            this.lblFinished.Location = new System.Drawing.Point(206, 79);
             this.lblFinished.Name = "lblFinished";
             this.lblFinished.Size = new System.Drawing.Size(35, 13);
             this.lblFinished.TabIndex = 0;
@@ -46,7 +47,7 @@ namespace GalgenmaennchenV2.Pages
             // 
             // btnNewGame
             // 
-            this.btnNewGame.Location = new System.Drawing.Point(185, 170);
+            this.btnNewGame.Location = new System.Drawing.Point(189, 162);
             this.btnNewGame.Name = "btnNewGame";
             this.btnNewGame.Size = new System.Drawing.Size(75, 23);
             this.btnNewGame.TabIndex = 1;
@@ -57,7 +58,7 @@ namespace GalgenmaennchenV2.Pages
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(209, 79);
+            this.lblError.Location = new System.Drawing.Point(206, 111);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(35, 13);
             this.lblError.TabIndex = 2;
@@ -66,17 +67,27 @@ namespace GalgenmaennchenV2.Pages
             // lblLose
             // 
             this.lblLose.AutoSize = true;
-            this.lblLose.Location = new System.Drawing.Point(209, 30);
+            this.lblLose.Location = new System.Drawing.Point(206, 135);
             this.lblLose.Name = "lblLose";
             this.lblLose.Size = new System.Drawing.Size(35, 13);
             this.lblLose.TabIndex = 3;
             this.lblLose.Text = "label1";
+            // 
+            // lblHighscore
+            // 
+            this.lblHighscore.AutoSize = true;
+            this.lblHighscore.Location = new System.Drawing.Point(279, 111);
+            this.lblHighscore.Name = "lblHighscore";
+            this.lblHighscore.Size = new System.Drawing.Size(35, 13);
+            this.lblHighscore.TabIndex = 4;
+            this.lblHighscore.Text = "label1";
             // 
             // FinishedOverlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 250);
+            this.Controls.Add(this.lblHighscore);
             this.Controls.Add(this.lblLose);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnNewGame);
@@ -97,5 +108,6 @@ namespace GalgenmaennchenV2.Pages
         private System.Windows.Forms.Button btnNewGame;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Label lblLose;
+        private System.Windows.Forms.Label lblHighscore;
     }
 }

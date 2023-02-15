@@ -36,6 +36,8 @@ namespace GalgenmaennchenV2.Service
 
             MySqlDataReader dataReader = dbConnector.ExecuteQuery(sql);
 
+            dataReader.Read();
+
             Rating highScore = new Rating(
                     dataReader.GetInt32("ratingId"),
                     dataReader.GetInt32("versuche"),
