@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using GalgenmaennchenV2.Datenbanken;
 
 namespace GalgenmaennchenV2.Service
 {
@@ -19,7 +20,7 @@ namespace GalgenmaennchenV2.Service
                     + "INNER JOIN tbl_users as u ON u.ID = r.tbl_users_ID "
                     + " GROUP BY r.tbl_users_ID order by versuche;";
 
-            MySqlDataReader dataReader = MySQLConnector.ExecuteQuery(sql);
+            MySqlDataReader dataReader = dbConnector.ExecuteQuery(sql);
 
             List<Rating> allRatings = new List<Rating>();
             while (dataReader.Read())
@@ -46,7 +47,7 @@ namespace GalgenmaennchenV2.Service
                     + "INNER JOIN tbl_users as u ON u.ID = r.tbl_users_ID "
                     + " GROUP BY r.tbl_users_ID order by versuche;";
 
-            MySqlDataReader dataReader = MySQLConnector.ExecuteQuery(sql);
+            MySqlDataReader dataReader = dbConnector.ExecuteQuery(sql);
 
             List<Rating> allRatings = new List<Rating>();
             while (dataReader.Read())
