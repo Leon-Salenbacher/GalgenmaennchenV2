@@ -84,7 +84,7 @@ namespace GalgenmaennchenV2
             try
             {
 
-                using (FinishedOverlay frm = new FinishedOverlay(gameAdapter))
+                using (FinishedOverlay frm = new FinishedOverlay(gameAdapter, this.userID))
                 {
                     frmoverlay.StartPosition = FormStartPosition.Manual;
                     frmoverlay.FormBorderStyle = FormBorderStyle.None;
