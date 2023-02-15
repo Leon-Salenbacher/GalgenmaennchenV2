@@ -1,4 +1,5 @@
-﻿using GalgenmaennchenV2.Service;
+﻿using GalgenmaennchenV2.Pages;
+using GalgenmaennchenV2.Service;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,8 +73,32 @@ namespace GalgenmaennchenV2
             imgHangman.BackgroundImage = imageHangman[state];
         }
 
-        private void loadEndScreen() { 
-            //load gameEnd screen here 
+        private void loadEndScreen() {
+            //load gameEnd screen here
+
+            Form frmoverlay = new Form();
+            try
+            {
+
+                using (FinishedOverlay frm = new FinishedOverlay(gameAdapter))
+                {
+                    frmoverlay.StartPosition = FormStartPosition.Manual;
+                    frmoverlay.FormBorderStyle = FormBorderStyle.None;
+                    frmoverlay.Opacity = .50d;
+                    frmoverlay.BackColor = Color.Black;
+                    frmoverlay.WindowState = FormWindowState.Maximized;
+                    frmoverlay.TopMost = true;
+                    frmoverlay.Location = this.Location;
+                    frmoverlay.ShowInTaskbar = false;
+                    frmoverlay.Show();
+                    frm.Owner = frmoverlay;
+                    frm.ShowDialog();
+                    frmoverlay.Dispose();
+                }
+            }
+
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+            finally { frmoverlay.Dispose(); }
 
         }
 
@@ -81,6 +106,32 @@ namespace GalgenmaennchenV2
         {
             countImage++;
             imgHangman.BackgroundImage = imageHangman[countImage];
+
+           // Form frmoverlay = new Form();
+           // try
+           // {
+           //     
+           //     using (FinishedOverlay frm = new FinishedOverlay())
+           //     {
+           //         frmoverlay.StartPosition = FormStartPosition.Manual;
+           //         frmoverlay.FormBorderStyle = FormBorderStyle.None;
+           //         frmoverlay.Opacity = .50d;
+           //         frmoverlay.BackColor = Color.Black;
+           //         frmoverlay.WindowState = FormWindowState.Maximized;
+           //         frmoverlay.TopMost = true;
+           //         frmoverlay.Location = this.Location;
+           //         frmoverlay.ShowInTaskbar = false;
+           //         frmoverlay.Show();
+           //         frm.Owner = frmoverlay;
+           //         frm.ShowDialog();
+           //         frmoverlay.Dispose();
+           //     }
+           // }
+           //
+           // catch(Exception ex) { MessageBox.Show(ex.Message);  }
+           // finally { frmoverlay.Dispose(); }
+           // 
+
         }
 
         private void panelHeaderHover(object sender, EventArgs e)
