@@ -10,6 +10,7 @@ namespace GalgenmaennchenV2.Objects
     {
 
         private List<Letter> wordLetters;
+        private string word;
         private List<Letter> alphabet;
         private GameState gameState;
         private string imgPath;
@@ -21,7 +22,18 @@ namespace GalgenmaennchenV2.Objects
             this.fails = 0;
             this.gameState = GameState.PLAYING;
             this.wordLetters = word;
+            this.word = this.convertToString();
             this.alphabet = newAlphabet();
+        }
+
+        private string convertToString()
+        {
+            string word = "";
+            for(int i = 0; i < this.wordLetters.Count(); i++)
+            {
+                word += this.wordLetters[i].getLetter();
+            }
+            return word;
         }
 
         public List<Letter> newAlphabet()
@@ -103,6 +115,16 @@ namespace GalgenmaennchenV2.Objects
         public void setGameState(GameState gameState)
         {
             this.gameState = gameState;
+        }
+
+        public void setWord(string word)
+        {
+            this.word = word;
+        }
+
+        public string getWord()
+        {
+            return this.word;
         }
     }
 }

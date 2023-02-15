@@ -22,13 +22,9 @@ namespace GalgenmaennchenV2
         private int userID;
         public GamePage(int userID)
         {
-
-
             InitializeComponent();
             initialise();
             this.userID = userID;
-
-
 
             imageHangman = new List<Image>()
             {
@@ -79,7 +75,7 @@ namespace GalgenmaennchenV2
 
         private void loadEndScreen() {
             //load gameEnd screen here
-
+            this.gameAdapter.handleGameEnd(this.userID);
             Form frmoverlay = new Form();
             try
             {

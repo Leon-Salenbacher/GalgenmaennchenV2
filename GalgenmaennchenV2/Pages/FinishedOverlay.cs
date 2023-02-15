@@ -32,6 +32,7 @@ namespace GalgenmaennchenV2.Pages
 
         private void btnNewGame_Click(object sender, EventArgs e)
         {
+            //TODO call function initialise of GamePage and close this window
 
         }
 
