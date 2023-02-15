@@ -19,10 +19,14 @@ namespace GalgenmaennchenV2
         private GameAdapter gameAdapter = new GameAdapter();
         private bool isCollapsed;
         int countImage;
-        public GamePage()
+        private int userID;
+        public GamePage(int userID)
         {
+
+
             InitializeComponent();
             initialise();
+            this.userID = userID;
 
 
 

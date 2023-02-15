@@ -16,7 +16,8 @@ namespace GalgenmaennchenV2.Pages
     {
         private GameAdapter gameAdapter;
         private RatingAdapter ratingAdapter = new RatingAdapter();
-        public FinishedOverlay(GameAdapter gameAdapter)
+        private int userID;
+        public FinishedOverlay(GameAdapter gameAdapter, int userID)
         {
             InitializeComponent();
             this.gameAdapter = gameAdapter;
