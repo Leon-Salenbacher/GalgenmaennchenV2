@@ -44,6 +44,26 @@ namespace GalgenmaennchenV2.Service
             return newGame;
         }
 
+        public String getWordString()
+        {
+            List<Letter> wordLetters =  this.game.getWordLetters();
+
+            String wordString = "";
+            for(int i = 0; i < wordLetters.Count; i++)
+            {
+                if (wordLetters[i].getIsChecked())
+                {
+                    wordString += wordLetters[i].getLetter() + " ";
+                }
+                else
+                {
+                    wordString += "_ ";
+                }
+            }
+
+            return wordString;
+        }
+
         public bool proofLetter(char letter)
         {
             for (int i = 0; i < this.game.getWordLetters().Count(); i++)
@@ -97,7 +117,7 @@ namespace GalgenmaennchenV2.Service
 
         public bool proofGameEnd()
         {
-            if (this.game.getFails() <= maxFails)
+            if (this.game.getFails() >= maxFails)
             {
                 this.game.setGameState(GameState.LOOS);
                 return true;
