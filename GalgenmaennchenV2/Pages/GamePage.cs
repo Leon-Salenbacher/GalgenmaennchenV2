@@ -145,131 +145,158 @@ namespace GalgenmaennchenV2
         private void button1_Click(object sender, EventArgs e)
         {
             proofLetter('A');
+            button1.Enabled = false;
+
         }
 
         private void btnB_Click(object sender, EventArgs e)
         {
             proofLetter('B');
+            btnB.Enabled = false;
         }
 
         private void btnC_Click(object sender, EventArgs e)
         {
             proofLetter('C');
+            btnC.Enabled = false;
         }
 
         private void btnD_Click(object sender, EventArgs e)
         {
             proofLetter('D');
+            btnD.Enabled = false;
         }
 
         private void btnE_Click(object sender, EventArgs e)
         {
             proofLetter('E');
+            btnE.Enabled = false;
         }
 
         private void btnF_Click(object sender, EventArgs e)
         {
             proofLetter('F');
+            btnF.Enabled = false;
         }
 
         private void btnG_Click(object sender, EventArgs e)
         {
             proofLetter('G');
+            btnG.Enabled = false;
         }
 
         private void btnH_Click(object sender, EventArgs e)
         {
             proofLetter('H');
+            btnH.Enabled = false;
         }
 
         private void btnI_Click(object sender, EventArgs e)
         {
             proofLetter('I');
+            btnI.Enabled = false;
         }
 
         private void btnJ_Click(object sender, EventArgs e)
         {
             proofLetter('J');
+            btnJ.Enabled = false;
         }
 
         private void btnK_Click(object sender, EventArgs e)
         {
             proofLetter('K');
+            btnK.Enabled = false;
         }
 
         private void btnL_Click(object sender, EventArgs e)
         {
             proofLetter('L');
+            btnL.Enabled = false;
         }
 
         private void btnM_Click(object sender, EventArgs e)
         {
             proofLetter('M');
+            btnM.Enabled = false;
         }
 
         private void btnN_Click(object sender, EventArgs e)
         {
             proofLetter('N');
+            btnN.Enabled = false;
         }
 
         private void btnO_Click(object sender, EventArgs e)
         {
             proofLetter('O');
+            btnO.Enabled = false;
         }
 
         private void btnP_Click(object sender, EventArgs e)
         {
             proofLetter('P');
+            btnP.Enabled = false;
         }
 
         private void btnQ_Click(object sender, EventArgs e)
         {
             proofLetter('Q');
+            btnQ.Enabled = false;
         }
 
         private void btnR_Click(object sender, EventArgs e)
         {
             proofLetter('R');
+            btnR.Enabled = false;
         }
 
         private void btnS_Click(object sender, EventArgs e)
         {
             proofLetter('S');
+            btnS.Enabled = false;
         }
 
         private void btnT_Click(object sender, EventArgs e)
         {
             proofLetter('T');
+            btnT.Enabled = false;
         }
 
         private void btnU_Click(object sender, EventArgs e)
         {
             proofLetter('U');
+            btnU.Enabled = false;
         }
 
         private void btnV_Click(object sender, EventArgs e)
         {
             proofLetter('V');
+            btnV.Enabled = false;
         }
 
         private void btnW_Click(object sender, EventArgs e)
         {
             proofLetter('W');
+            btnW.Enabled = false;
         }
 
         private void btnX_Click(object sender, EventArgs e)
         {
             proofLetter('X');
+            btnX.Enabled = false;
         }
 
         private void btnY_Click(object sender, EventArgs e)
         {
             proofLetter('Y');
+            btnY.Enabled = false;
         }
 
         private void btnZ_Click(object sender, EventArgs e)
         {
             proofLetter('Z');
+            btnZ.Enabled = false;
         }
     }
 }
