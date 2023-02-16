@@ -33,13 +33,15 @@ namespace GalgenmaennchenV2.Pages
             this.lblHallo = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.btnPlay = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelHeaderDashboard = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.btnMenuSpiel = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.leaderboard = new System.Windows.Forms.GroupBox();
+            this.lblLeaderboard = new System.Windows.Forms.Label();
             this.panelHeaderDashboard.SuspendLayout();
+            this.leaderboard.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblHallo
@@ -71,15 +73,6 @@ namespace GalgenmaennchenV2.Pages
             this.btnPlay.Text = "Spielen";
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(427, 105);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(324, 282);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // panelHeaderDashboard
             // 
@@ -119,19 +112,40 @@ namespace GalgenmaennchenV2.Pages
             // 
             this.timer1.Tick += new System.EventHandler(this.timerHeader);
             // 
+            // leaderboard
+            // 
+            this.leaderboard.Controls.Add(this.lblLeaderboard);
+            this.leaderboard.Location = new System.Drawing.Point(427, 105);
+            this.leaderboard.Name = "leaderboard";
+            this.leaderboard.Size = new System.Drawing.Size(324, 282);
+            this.leaderboard.TabIndex = 3;
+            this.leaderboard.TabStop = false;
+            this.leaderboard.Text = "groupBox1";
+            // 
+            // lblLeaderboard
+            // 
+            this.lblLeaderboard.AutoSize = true;
+            this.lblLeaderboard.Location = new System.Drawing.Point(33, 53);
+            this.lblLeaderboard.Name = "lblLeaderboard";
+            this.lblLeaderboard.Size = new System.Drawing.Size(35, 13);
+            this.lblLeaderboard.TabIndex = 0;
+            this.lblLeaderboard.Text = "label1";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelHeaderDashboard);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.leaderboard);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblHallo);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.panelHeaderDashboard.ResumeLayout(false);
+            this.leaderboard.ResumeLayout(false);
+            this.leaderboard.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,11 +156,12 @@ namespace GalgenmaennchenV2.Pages
         private System.Windows.Forms.Label lblHallo;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panelHeaderDashboard;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnMenuSpiel;
         private System.Windows.Forms.Timer timer1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.GroupBox leaderboard;
+        private System.Windows.Forms.Label lblLeaderboard;
     }
 }
