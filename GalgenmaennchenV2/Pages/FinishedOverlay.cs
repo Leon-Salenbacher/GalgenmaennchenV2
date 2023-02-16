@@ -35,20 +35,33 @@ namespace GalgenmaennchenV2.Pages
         private void btnNewGame_Click(object sender, EventArgs e)
         {
             //closing both windows and open new one
+            GamePage gamePage2 = new GamePage(1);
+            this.Hide();
             this.Close();
-            this.gamePage.initialise();
+            this.gamePage.Hide();
+            this.gamePage.Close();
+            gamePage2.ShowDialog();
         }
 
         private void loadPage()
         {
             if (this.gameAdapter.game.getGameState() == GameState.WIN)
             {
-                lblFinished.Text = "Win";
-            } else if (this.gameAdapter.game.getGameState() == GameState.LOOS)
+                lblFinished.Text = "Gewonnen";
+                lblLose.Hide();
+                lblError.Hide();
+                lblVersuche.Text = this.gameAdapter.game.getFails().ToString();
+            }
+            else if (this.gameAdapter.game.getGameState() == GameState.LOOS)
             {
-                lblLose.Text = "Loose";
+                lblLose.Text = "Verloren";
+                lblFinished.Hide();
+                lblError.Hide();
+                lblVersuche.Text = this.gameAdapter.game.getFails().ToString();
             }  else {
-                lblError.Text = "Error";
+                lblError.Text = "Fehler";
+                lblFinished.Hide();
+                lblLose.Hide();
             }
 
             Rating rating = ratingAdapter.getHighScore(userID);
@@ -56,5 +69,19 @@ namespace GalgenmaennchenV2.Pages
 
         }
 
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard= new Dashboard(1);
+            this.Hide();
+            this.Close();
+            this.gamePage.Hide();
+            this.gamePage.Close();
+            dashboard.ShowDialog();
+        }
+
+        private void lblError_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

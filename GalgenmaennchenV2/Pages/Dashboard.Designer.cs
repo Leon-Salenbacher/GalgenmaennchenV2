@@ -32,7 +32,6 @@ namespace GalgenmaennchenV2.Pages
             this.components = new System.ComponentModel.Container();
             this.lblHallo = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.btnPlay = new System.Windows.Forms.Button();
             this.panelHeaderDashboard = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.btnMenuSpiel = new System.Windows.Forms.Button();
@@ -40,6 +39,7 @@ namespace GalgenmaennchenV2.Pages
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.leaderboard = new System.Windows.Forms.GroupBox();
             this.lblLeaderboard = new System.Windows.Forms.Label();
+            this.btnPlay = new System.Windows.Forms.Button();
             this.panelHeaderDashboard.SuspendLayout();
             this.leaderboard.SuspendLayout();
             this.SuspendLayout();
@@ -48,10 +48,9 @@ namespace GalgenmaennchenV2.Pages
             // 
             this.lblHallo.AutoSize = true;
             this.lblHallo.Font = new System.Drawing.Font("Calibri", 24F);
-            this.lblHallo.Location = new System.Drawing.Point(120, 129);
-            this.lblHallo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHallo.Location = new System.Drawing.Point(90, 105);
             this.lblHallo.Name = "lblHallo";
-            this.lblHallo.Size = new System.Drawing.Size(105, 49);
+            this.lblHallo.Size = new System.Drawing.Size(83, 39);
             this.lblHallo.TabIndex = 0;
             this.lblHallo.Text = "Hallo";
             // 
@@ -59,23 +58,11 @@ namespace GalgenmaennchenV2.Pages
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Calibri", 24F);
-            this.lblUsername.Location = new System.Drawing.Point(215, 129);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Location = new System.Drawing.Point(161, 105);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(196, 49);
+            this.lblUsername.Size = new System.Drawing.Size(157, 39);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Platzhalter";
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.Location = new System.Drawing.Point(129, 379);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(249, 70);
-            this.btnPlay.TabIndex = 2;
-            this.btnPlay.Text = "Spielen";
-            this.btnPlay.UseVisualStyleBackColor = true;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // panelHeaderDashboard
             // 
@@ -84,11 +71,10 @@ namespace GalgenmaennchenV2.Pages
             this.panelHeaderDashboard.Controls.Add(this.btnMenuSpiel);
             this.panelHeaderDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeaderDashboard.Location = new System.Drawing.Point(0, 0);
-            this.panelHeaderDashboard.Margin = new System.Windows.Forms.Padding(4);
-            this.panelHeaderDashboard.MaximumSize = new System.Drawing.Size(1088, 119);
-            this.panelHeaderDashboard.MinimumSize = new System.Drawing.Size(1088, 55);
+            this.panelHeaderDashboard.MaximumSize = new System.Drawing.Size(816, 97);
+            this.panelHeaderDashboard.MinimumSize = new System.Drawing.Size(816, 45);
             this.panelHeaderDashboard.Name = "panelHeaderDashboard";
-            this.panelHeaderDashboard.Size = new System.Drawing.Size(1088, 55);
+            this.panelHeaderDashboard.Size = new System.Drawing.Size(816, 45);
             this.panelHeaderDashboard.TabIndex = 8;
             this.panelHeaderDashboard.MouseEnter += new System.EventHandler(this.panelHeaderEnter);
             this.panelHeaderDashboard.MouseLeave += new System.EventHandler(this.panelHeaderClose);
@@ -96,20 +82,18 @@ namespace GalgenmaennchenV2.Pages
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(33, 66);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(25, 54);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 34);
+            this.button2.Size = new System.Drawing.Size(119, 28);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // btnMenuSpiel
             // 
-            this.btnMenuSpiel.Location = new System.Drawing.Point(239, 66);
-            this.btnMenuSpiel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMenuSpiel.Location = new System.Drawing.Point(179, 54);
             this.btnMenuSpiel.Name = "btnMenuSpiel";
-            this.btnMenuSpiel.Size = new System.Drawing.Size(159, 34);
+            this.btnMenuSpiel.Size = new System.Drawing.Size(119, 28);
             this.btnMenuSpiel.TabIndex = 0;
             this.btnMenuSpiel.Text = "button1";
             this.btnMenuSpiel.UseVisualStyleBackColor = true;
@@ -121,11 +105,9 @@ namespace GalgenmaennchenV2.Pages
             // leaderboard
             // 
             this.leaderboard.Controls.Add(this.lblLeaderboard);
-            this.leaderboard.Location = new System.Drawing.Point(569, 129);
-            this.leaderboard.Margin = new System.Windows.Forms.Padding(4);
+            this.leaderboard.Location = new System.Drawing.Point(427, 105);
             this.leaderboard.Name = "leaderboard";
-            this.leaderboard.Padding = new System.Windows.Forms.Padding(4);
-            this.leaderboard.Size = new System.Drawing.Size(432, 347);
+            this.leaderboard.Size = new System.Drawing.Size(324, 282);
             this.leaderboard.TabIndex = 3;
             this.leaderboard.TabStop = false;
             this.leaderboard.Text = "groupBox1";
@@ -133,24 +115,34 @@ namespace GalgenmaennchenV2.Pages
             // lblLeaderboard
             // 
             this.lblLeaderboard.AutoSize = true;
-            this.lblLeaderboard.Location = new System.Drawing.Point(44, 65);
-            this.lblLeaderboard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLeaderboard.Location = new System.Drawing.Point(33, 53);
             this.lblLeaderboard.Name = "lblLeaderboard";
-            this.lblLeaderboard.Size = new System.Drawing.Size(46, 17);
+            this.lblLeaderboard.Size = new System.Drawing.Size(35, 13);
             this.lblLeaderboard.TabIndex = 0;
             this.lblLeaderboard.Text = "label1";
             // 
+            // btnPlay
+            // 
+            this.btnPlay.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.btnPlay.Location = new System.Drawing.Point(61, 245);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(277, 60);
+            this.btnPlay.TabIndex = 2;
+            this.btnPlay.Text = "Spielen";
+            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelHeaderDashboard);
             this.Controls.Add(this.leaderboard);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblHallo);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.panelHeaderDashboard.ResumeLayout(false);
@@ -165,7 +157,6 @@ namespace GalgenmaennchenV2.Pages
 
         private System.Windows.Forms.Label lblHallo;
         private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Panel panelHeaderDashboard;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnMenuSpiel;
@@ -173,5 +164,6 @@ namespace GalgenmaennchenV2.Pages
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox leaderboard;
         private System.Windows.Forms.Label lblLeaderboard;
+        private System.Windows.Forms.Button btnPlay;
     }
 }

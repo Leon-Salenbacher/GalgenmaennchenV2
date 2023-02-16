@@ -87,7 +87,7 @@ namespace GalgenmaennchenV2
                     frmoverlay.Opacity = .50d;
                     frmoverlay.BackColor = Color.Black;
                     frmoverlay.WindowState = FormWindowState.Maximized;
-                    frmoverlay.TopMost = true;
+                    frmoverlay.TopMost = false;
                     frmoverlay.Location = this.Location;
                     frmoverlay.ShowInTaskbar = false;
                     frmoverlay.Show();
