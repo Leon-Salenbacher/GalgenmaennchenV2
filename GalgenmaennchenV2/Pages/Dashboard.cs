@@ -14,9 +14,12 @@ namespace GalgenmaennchenV2.Pages
     public partial class Dashboard : Form
     {
         private LeaderBoardAdapter leaderBoardAdapter = new LeaderBoardAdapter();
+        private UserAdapter userAdapter = new UserAdapter();
         private bool isCollapsed;
-        public Dashboard()
+        private int userId;
+        public Dashboard(int userId)
         {
+            this.userId = userId;
             InitializeComponent();
             initialize();
         }
@@ -24,7 +27,7 @@ namespace GalgenmaennchenV2.Pages
         private void initialize()
         {
             lblLeaderboard.Text = leaderBoardAdapter.ratingsToString(leaderBoardAdapter.getTop10Ratings_groupedByUser());
-
+            lblUsername.Text = userAdapter.getUser(this.userId).getName();
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
