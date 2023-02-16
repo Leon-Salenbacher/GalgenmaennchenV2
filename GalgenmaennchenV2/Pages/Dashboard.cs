@@ -27,7 +27,7 @@ namespace GalgenmaennchenV2.Pages
         private void initialize()
         {
             lblLeaderboard.Text = leaderBoardAdapter.ratingsToString(leaderBoardAdapter.getTop10Ratings_groupedByUser());
-            lblUsername.Text = userAdapter.getUser(this.userId).getName();
+            lblUsername.Text = userAdapter.getUserById(this.userId).getName();
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
