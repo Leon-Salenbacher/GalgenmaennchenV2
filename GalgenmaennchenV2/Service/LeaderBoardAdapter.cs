@@ -42,7 +42,7 @@ namespace GalgenmaennchenV2.Service
         public List<Rating> getTop10Ratings_groupedByUser()
         {
             String sql = "SELECT r.ID as ratingID, min(versuche) as highscore, "
-                    + "word, name as username, u.ID as userID" 
+                    + "word, name as username, u.ID as userID " 
                     + "FROM galgenmaenchen.tbl_ratings as r " 
                     + "INNER JOIN tbl_users as u ON u.ID = r.tbl_users_ID "
                     + " GROUP BY r.tbl_users_ID order by versuche;";
@@ -71,7 +71,7 @@ namespace GalgenmaennchenV2.Service
             string ratingString = "";
             for(int i = 0; i < ratings.Count(); i++)
             {
-                ratingString += i + ": " + ratings[i].getUser().getName() + " \n";
+                ratingString += (i + 1)+ ": " + ratings[i].getUser().getName() + " \n";
             }
 
             return ratingString;
