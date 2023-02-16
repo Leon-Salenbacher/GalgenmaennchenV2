@@ -71,7 +71,7 @@ namespace GalgenmaennchenV2.Service
             string ratingString = "";
             for(int i = 0; i < ratings.Count(); i++)
             {
-                ratingString += (i + 1)+ ": " + ratings[i].getUser().getName() + " \n";
+                ratingString += (i + 1)+ ": " + ratings[i].getUser().getName() + " " +  ratings[i].getVersuche() +  " \n";
             }
 
             return ratingString;
