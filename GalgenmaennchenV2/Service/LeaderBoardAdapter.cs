@@ -23,20 +23,28 @@ namespace GalgenmaennchenV2.Service
             MySqlDataReader dataReader = dbConnector.ExecuteQuery(sql);
 
             List<Rating> allRatings = new List<Rating>();
-            while (dataReader.Read())
-            {
-                Rating rating = new Rating(
-                    dataReader.GetInt32("ratingID"),
-                    dataReader.GetInt32("highscore"),
-                    dataReader.GetString("word"),
-                    new User(
-                        dataReader.GetInt32("userID"),
-                        dataReader.GetString("username")
-                        )
-                    );
-                allRatings.Add(rating);
+            try
+            { 
+                while (dataReader.Read())
+                {
+                    Rating rating = new Rating(
+                        dataReader.GetInt32("ratingID"),
+                        dataReader.GetInt32("highscore"),
+                        dataReader.GetString("word"),
+                        new User(
+                            dataReader.GetInt32("userID"),
+                            dataReader.GetString("username")
+                            )
+                        );
+                    allRatings.Add(rating);
+                }
+                return allRatings;
             }
+            catch
+            {
             return allRatings;
+
+            }
         }
 
         public List<Rating> getTop10Ratings_groupedByUser()
@@ -48,8 +56,11 @@ namespace GalgenmaennchenV2.Service
                     + " GROUP BY r.tbl_users_ID order by versuche;";
 
             MySqlDataReader dataReader = dbConnector.ExecuteQuery(sql);
-
             List<Rating> allRatings = new List<Rating>();
+            try
+            {
+
+
             while (dataReader.Read())
             {
                 Rating rating = new Rating(
@@ -63,7 +74,12 @@ namespace GalgenmaennchenV2.Service
                     );
                 allRatings.Add(rating);
             }
-            return allRatings;
+                return allRatings;
+            }
+            catch
+            {
+                return allRatings;
+            }
         }
 
         public String ratingsToString(List<Rating> ratings)
