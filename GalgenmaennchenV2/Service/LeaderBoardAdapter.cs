@@ -64,7 +64,17 @@ namespace GalgenmaennchenV2.Service
                 allRatings.Add(rating);
             }
             return allRatings;
-            return null;
+        }
+
+        public String ratingsToString(List<Rating> ratings)
+        {
+            string ratingString = "";
+            for(int i = 0; i < ratings.Count(); i++)
+            {
+                ratingString += i + ": " + ratings[i].getUser().getName() + " \n";
+            }
+
+            return ratingString;
         }
     }
 }
