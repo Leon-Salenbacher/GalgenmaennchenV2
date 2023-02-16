@@ -39,12 +39,12 @@ namespace GalgenmaennchenV2.Objects
 
         private int id;
 
-        private int getId()
+        public int getId()
         {
             return this.id;
         }
 
-        private void setId(int id)
+        public void setId(int id)
         {
             this.id = id;
         }
