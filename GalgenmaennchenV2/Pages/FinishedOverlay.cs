@@ -17,12 +17,14 @@ namespace GalgenmaennchenV2.Pages
         private GameAdapter gameAdapter;
         private RatingAdapter ratingAdapter = new RatingAdapter();
         private int userID;
-        public FinishedOverlay(GameAdapter gameAdapter, int userID)
+        private GamePage gamePage;
+        public FinishedOverlay(GameAdapter gameAdapter, int userID, GamePage gamePage) 
         {
             InitializeComponent();
             this.gameAdapter = gameAdapter;
             this.userID = userID;
             loadPage();
+            this.gamePage = gamePage;
         }
 
         private void FinishedOverlay_Load(object sender, EventArgs e)
@@ -32,8 +34,9 @@ namespace GalgenmaennchenV2.Pages
 
         private void btnNewGame_Click(object sender, EventArgs e)
         {
-            //TODO call function initialise of GamePage and close this window
-
+            //closing both windows and open new one
+            this.Close();
+            this.gamePage.initialise();
         }
 
         private void loadPage()

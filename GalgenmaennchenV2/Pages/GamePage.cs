@@ -43,7 +43,7 @@ namespace GalgenmaennchenV2
             countImage = 0;
         }
 
-        private void initialise()
+        public void initialise()
         {
             //imgHangman.BackgroundImage = imageHangman[countImage];
 
@@ -80,7 +80,7 @@ namespace GalgenmaennchenV2
             try
             {
 
-                using (FinishedOverlay frm = new FinishedOverlay(gameAdapter, this.userID))
+                using (FinishedOverlay frm = new FinishedOverlay(gameAdapter, this.userID, this))
                 {
                     frmoverlay.StartPosition = FormStartPosition.Manual;
                     frmoverlay.FormBorderStyle = FormBorderStyle.None;
@@ -106,31 +106,6 @@ namespace GalgenmaennchenV2
         {
             countImage++;
             imgHangman.BackgroundImage = imageHangman[countImage];
-
-           // Form frmoverlay = new Form();
-           // try
-           // {
-           //     
-           //     using (FinishedOverlay frm = new FinishedOverlay())
-           //     {
-           //         frmoverlay.StartPosition = FormStartPosition.Manual;
-           //         frmoverlay.FormBorderStyle = FormBorderStyle.None;
-           //         frmoverlay.Opacity = .50d;
-           //         frmoverlay.BackColor = Color.Black;
-           //         frmoverlay.WindowState = FormWindowState.Maximized;
-           //         frmoverlay.TopMost = true;
-           //         frmoverlay.Location = this.Location;
-           //         frmoverlay.ShowInTaskbar = false;
-           //         frmoverlay.Show();
-           //         frm.Owner = frmoverlay;
-           //         frm.ShowDialog();
-           //         frmoverlay.Dispose();
-           //     }
-           // }
-           //
-           // catch(Exception ex) { MessageBox.Show(ex.Message);  }
-           // finally { frmoverlay.Dispose(); }
-           // 
 
         }
 
