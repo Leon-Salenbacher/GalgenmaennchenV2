@@ -13,30 +13,49 @@ namespace GalgenmaennchenV2.Objects
             private string word;
             private User user;
 
-            public int Id
-            {
-                get { return id; }
-                set { id = value; }
-            }
 
-            public int Versuche
-            {
-                get { return versuche; }
-                set { versuche = value; }
-            }
-
-            public string Word
-            {
-                get { return word; }
-                set { word = value; }
-            }
-
-            public User User
+            public int getId()
         {
-                get { return user; }
-                set { user = value; }
-            }
+            return this.id;
+        }
 
+        public void setId(int id)
+        {
+            this.id = id;
+        }
+
+            public int getVersuche()
+        {
+            return this.versuche;
+        }
+
+        public void setVersuche(int versuche)
+        {
+            this.versuche = versuche;
+        }
+
+
+        public string getWord()
+        {
+            return this.word;
+
+        }
+
+        public void setWord(string word)
+        {
+            this.word = word;
+        }
+
+
+        public User getUser()
+        {
+            return this.user;
+        }
+
+        public void setUser(User user)
+        {
+            this.user = user;
+        }
             public Rating()
             {
 

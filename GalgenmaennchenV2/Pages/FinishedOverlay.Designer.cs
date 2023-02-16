@@ -33,50 +33,126 @@ namespace GalgenmaennchenV2.Pages
             this.btnNewGame = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
             this.lblLose = new System.Windows.Forms.Label();
+            this.lblHighscore = new System.Windows.Forms.Label();
+            this.lblVersuche = new System.Windows.Forms.Label();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.lblText = new System.Windows.Forms.Label();
+            this.lblTextTry = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblFinished
             // 
             this.lblFinished.AutoSize = true;
-            this.lblFinished.Location = new System.Drawing.Point(206, 115);
+            this.lblFinished.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFinished.Location = new System.Drawing.Point(224, 39);
             this.lblFinished.Name = "lblFinished";
-            this.lblFinished.Size = new System.Drawing.Size(35, 13);
+            this.lblFinished.Size = new System.Drawing.Size(87, 36);
             this.lblFinished.TabIndex = 0;
             this.lblFinished.Text = "label1";
             // 
             // btnNewGame
             // 
-            this.btnNewGame.Location = new System.Drawing.Point(185, 170);
+            this.btnNewGame.Location = new System.Drawing.Point(129, 165);
             this.btnNewGame.Name = "btnNewGame";
-            this.btnNewGame.Size = new System.Drawing.Size(75, 23);
+            this.btnNewGame.Size = new System.Drawing.Size(118, 43);
             this.btnNewGame.TabIndex = 1;
-            this.btnNewGame.Text = "New Game";
+            this.btnNewGame.Text = "Erneut Spielen";
             this.btnNewGame.UseVisualStyleBackColor = true;
             this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(209, 79);
+            this.lblError.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.Location = new System.Drawing.Point(224, 39);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(35, 13);
+            this.lblError.Size = new System.Drawing.Size(87, 36);
             this.lblError.TabIndex = 2;
             this.lblError.Text = "label1";
+            this.lblError.Click += new System.EventHandler(this.lblError_Click);
             // 
             // lblLose
             // 
             this.lblLose.AutoSize = true;
-            this.lblLose.Location = new System.Drawing.Point(209, 30);
+            this.lblLose.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLose.Location = new System.Drawing.Point(224, 39);
             this.lblLose.Name = "lblLose";
-            this.lblLose.Size = new System.Drawing.Size(35, 13);
+            this.lblLose.Size = new System.Drawing.Size(87, 36);
             this.lblLose.TabIndex = 3;
             this.lblLose.Text = "label1";
+            // 
+            // lblHighscore
+            // 
+            this.lblHighscore.AutoSize = true;
+            this.lblHighscore.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHighscore.Location = new System.Drawing.Point(303, 121);
+            this.lblHighscore.Name = "lblHighscore";
+            this.lblHighscore.Size = new System.Drawing.Size(64, 26);
+            this.lblHighscore.TabIndex = 4;
+            this.lblHighscore.Text = "label1";
+            // 
+            // lblVersuche
+            // 
+            this.lblVersuche.AutoSize = true;
+            this.lblVersuche.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersuche.Location = new System.Drawing.Point(303, 85);
+            this.lblVersuche.Name = "lblVersuche";
+            this.lblVersuche.Size = new System.Drawing.Size(64, 26);
+            this.lblVersuche.TabIndex = 5;
+            this.lblVersuche.Text = "label1";
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Location = new System.Drawing.Point(274, 165);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(118, 43);
+            this.btnDashboard.TabIndex = 6;
+            this.btnDashboard.Text = "Zurück zum Hauptmenü";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // lblText
+            // 
+            this.lblText.AutoSize = true;
+            this.lblText.Font = new System.Drawing.Font("Calibri", 22F);
+            this.lblText.Location = new System.Drawing.Point(122, 38);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(110, 37);
+            this.lblText.TabIndex = 7;
+            this.lblText.Text = "Du hast";
+            // 
+            // lblTextTry
+            // 
+            this.lblTextTry.AutoSize = true;
+            this.lblTextTry.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextTry.Location = new System.Drawing.Point(124, 85);
+            this.lblTextTry.Name = "lblTextTry";
+            this.lblTextTry.Size = new System.Drawing.Size(149, 26);
+            this.lblTextTry.TabIndex = 8;
+            this.lblTextTry.Text = "Deine Versuche:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(124, 121);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 26);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Dein Highscore:";
             // 
             // FinishedOverlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 250);
+            this.ClientSize = new System.Drawing.Size(534, 250);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTextTry);
+            this.Controls.Add(this.lblText);
+            this.Controls.Add(this.btnDashboard);
+            this.Controls.Add(this.lblVersuche);
+            this.Controls.Add(this.lblHighscore);
             this.Controls.Add(this.lblLose);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnNewGame);
@@ -97,5 +173,11 @@ namespace GalgenmaennchenV2.Pages
         private System.Windows.Forms.Button btnNewGame;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Label lblLose;
+        private System.Windows.Forms.Label lblHighscore;
+        private System.Windows.Forms.Label lblVersuche;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Label lblText;
+        private System.Windows.Forms.Label lblTextTry;
+        private System.Windows.Forms.Label label1;
     }
 }

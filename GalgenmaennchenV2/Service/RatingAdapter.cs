@@ -35,7 +35,7 @@ namespace GalgenmaennchenV2.Service
                     "WHERE u.ID = " + userId + " LIMIT 1;";
 
             MySqlDataReader dataReader = dbConnector.ExecuteQuery(sql);
-
+            dataReader.Read();
             Rating highScore = new Rating(
                     dataReader.GetInt32("ratingId"),
                     dataReader.GetInt32("versuche"),

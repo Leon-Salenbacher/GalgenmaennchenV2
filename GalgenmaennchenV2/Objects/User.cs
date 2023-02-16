@@ -8,28 +8,45 @@ namespace GalgenmaennchenV2.Objects
 {
     public class User
     {
-        private String name;
+        private string name;
 
-        public String Name
+        public string getName()
         {
-            get { return name; }
-            set { name = value; }
+            return this.name;
+        }
+
+        public void setName(string name)
+        {
+            this.name = name;
         }
 
         private string password;
 
-        public string Password
+        private void setPassword(string password)
         {
-            get { return password; }
-            set { password = value; }
+            this.password = password;
+        }
+
+        public bool isPassword(string password)
+        {
+            if (this.password.Equals(password))
+            {
+                return true;
+            }
+
+            return false;
         }
 
         private int id;
 
-        public int Id
+        public int getId()
         {
-            get { return id; }
-            set { id = value; }
+            return this.id;
+        }
+
+        public void setId(int id)
+        {
+            this.id = id;
         }
 
         public User()

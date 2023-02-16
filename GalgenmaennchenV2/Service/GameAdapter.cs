@@ -14,6 +14,7 @@ namespace GalgenmaennchenV2.Service
         public static int maxFails = 10;
 
         public Game game;
+        private RatingAdapter ratingAdapter = new RatingAdapter();
         private List<Letter> getWord()
         {
             string word;
@@ -117,7 +118,7 @@ namespace GalgenmaennchenV2.Service
 
         public bool proofGameEnd()
         {
-            if (this.game.getFails() >= maxFails)
+            if (this.game.getFails() >= maxFails -1 )
             {
                 this.game.setGameState(GameState.LOOS);
                 return true;
@@ -136,7 +137,7 @@ namespace GalgenmaennchenV2.Service
             return true;
         }
 
-        public Rating handleGameEnd()
+        public void handleGameEnd(int userId)
         {
             if (this.game.getGameState() == GameState.PLAYING)
             {
@@ -145,10 +146,9 @@ namespace GalgenmaennchenV2.Service
 
             if (this.game.getGameState() == GameState.WIN)
             {
-                return null;
+                ratingAdapter.createRating(userId, this.game.getFails(), this.game.getWord());
             }
 
-            return null;
         }
 
 
