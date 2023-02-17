@@ -40,6 +40,8 @@ namespace GalgenmaennchenV2.Pages
             this.lblText = new System.Windows.Forms.Label();
             this.lblTextTry = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblSolution = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblFinished
@@ -54,7 +56,7 @@ namespace GalgenmaennchenV2.Pages
             // 
             // btnNewGame
             // 
-            this.btnNewGame.Location = new System.Drawing.Point(129, 165);
+            this.btnNewGame.Location = new System.Drawing.Point(129, 195);
             this.btnNewGame.Name = "btnNewGame";
             this.btnNewGame.Size = new System.Drawing.Size(118, 43);
             this.btnNewGame.TabIndex = 1;
@@ -105,7 +107,7 @@ namespace GalgenmaennchenV2.Pages
             // 
             // btnDashboard
             // 
-            this.btnDashboard.Location = new System.Drawing.Point(274, 165);
+            this.btnDashboard.Location = new System.Drawing.Point(272, 195);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(118, 43);
             this.btnDashboard.TabIndex = 6;
@@ -143,11 +145,32 @@ namespace GalgenmaennchenV2.Pages
             this.label1.TabIndex = 9;
             this.label1.Text = "Dein Highscore:";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(152, 162);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 19);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Lösungswort:";
+            // 
+            // lblSolution
+            // 
+            this.lblSolution.AutoSize = true;
+            this.lblSolution.Location = new System.Drawing.Point(269, 166);
+            this.lblSolution.Name = "lblSolution";
+            this.lblSolution.Size = new System.Drawing.Size(55, 13);
+            this.lblSolution.TabIndex = 11;
+            this.lblSolution.Text = "lblSolution";
+            // 
             // FinishedOverlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 250);
+            this.Controls.Add(this.lblSolution);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTextTry);
             this.Controls.Add(this.lblText);
@@ -181,5 +204,7 @@ namespace GalgenmaennchenV2.Pages
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Label lblTextTry;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSolution;
     }
 }
