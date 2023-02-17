@@ -29,6 +29,7 @@ namespace GalgenmaennchenV2.Pages
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinishedOverlay));
             this.lblFinished = new System.Windows.Forms.Label();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
@@ -157,6 +158,7 @@ namespace GalgenmaennchenV2.Pages
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnNewGame);
             this.Controls.Add(this.lblFinished);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FinishedOverlay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FinishedOverlay";

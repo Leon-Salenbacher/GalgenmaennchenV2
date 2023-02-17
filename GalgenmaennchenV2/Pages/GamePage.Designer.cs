@@ -30,6 +30,7 @@ namespace GalgenmaennchenV2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GamePage));
             this.imgHangman = new System.Windows.Forms.PictureBox();
             this.btnTest = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -74,6 +75,7 @@ namespace GalgenmaennchenV2
             // 
             // imgHangman
             // 
+            this.imgHangman.BackColor = System.Drawing.Color.WhiteSmoke;
             this.imgHangman.BackgroundImage = global::GalgenmaennchenV2.Properties.Resources.Stage1;
             this.imgHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.imgHangman.Location = new System.Drawing.Point(98, 53);
@@ -562,12 +564,14 @@ namespace GalgenmaennchenV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(496, 680);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelHeaderSpiel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.imgHangman);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GamePage";
             this.Text = "GamePage";
             ((System.ComponentModel.ISupportInitialize)(this.imgHangman)).EndInit();
