@@ -30,6 +30,7 @@ namespace GalgenmaennchenV2.Pages
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.lblHallo = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.panelHeaderDashboard = new System.Windows.Forms.Panel();
@@ -48,7 +49,7 @@ namespace GalgenmaennchenV2.Pages
             // 
             this.lblHallo.AutoSize = true;
             this.lblHallo.Font = new System.Drawing.Font("Calibri", 24F);
-            this.lblHallo.Location = new System.Drawing.Point(90, 105);
+            this.lblHallo.Location = new System.Drawing.Point(83, 121);
             this.lblHallo.Name = "lblHallo";
             this.lblHallo.Size = new System.Drawing.Size(83, 39);
             this.lblHallo.TabIndex = 0;
@@ -58,7 +59,7 @@ namespace GalgenmaennchenV2.Pages
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Calibri", 24F);
-            this.lblUsername.Location = new System.Drawing.Point(161, 105);
+            this.lblUsername.Location = new System.Drawing.Point(163, 121);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(157, 39);
             this.lblUsername.TabIndex = 1;
@@ -107,10 +108,9 @@ namespace GalgenmaennchenV2.Pages
             this.leaderboard.Controls.Add(this.lblLeaderboard);
             this.leaderboard.Location = new System.Drawing.Point(427, 105);
             this.leaderboard.Name = "leaderboard";
-            this.leaderboard.Size = new System.Drawing.Size(324, 282);
+            this.leaderboard.Size = new System.Drawing.Size(324, 221);
             this.leaderboard.TabIndex = 3;
             this.leaderboard.TabStop = false;
-            this.leaderboard.Text = "groupBox1";
             // 
             // lblLeaderboard
             // 
@@ -125,7 +125,7 @@ namespace GalgenmaennchenV2.Pages
             // 
             this.btnPlay.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.btnPlay.Location = new System.Drawing.Point(61, 245);
+            this.btnPlay.Location = new System.Drawing.Point(59, 266);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(277, 60);
             this.btnPlay.TabIndex = 2;
@@ -143,6 +143,7 @@ namespace GalgenmaennchenV2.Pages
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblHallo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.panelHeaderDashboard.ResumeLayout(false);

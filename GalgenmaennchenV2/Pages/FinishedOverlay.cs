@@ -67,6 +67,7 @@ namespace GalgenmaennchenV2.Pages
             Rating rating = ratingAdapter.getHighScore(userID);
             lblHighscore.Text = rating.getVersuche().ToString();
 
+            lblSolution.Text = this.gameAdapter.game.getWord();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
