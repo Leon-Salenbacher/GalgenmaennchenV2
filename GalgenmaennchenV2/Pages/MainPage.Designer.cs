@@ -106,7 +106,6 @@ namespace GalgenmaennchenV2.Pages
             this.Controls.Add(this.lblPasswort);
             this.Controls.Add(this.txtboxPasswort);
             this.Controls.Add(this.btnAnmelden);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.ResumeLayout(false);
