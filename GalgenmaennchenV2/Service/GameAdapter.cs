@@ -1,4 +1,5 @@
 ﻿using GalgenmaennchenV2.Objects;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace GalgenmaennchenV2.Service
 {
-    public class GameAdapter
+    public class GameAdapter : DBAdapter
     {
         public static int maxLetters = 5;
         public int currentFails = 0;
         public static int maxFails = 10;
-
         public Game game;
         private RatingAdapter ratingAdapter = new RatingAdapter();
         private List<Letter> getWord()
@@ -21,12 +21,19 @@ namespace GalgenmaennchenV2.Service
             char[] wordChar = null;
             List<Letter> wordLetters = new List<Letter>();
 
-
-            //get word that fitt conditions
             do
             {
-                //get word from api
-                word = "HELLO";
+
+                string sql = " SELECT word FROM tbl_words "
+                        + "ORDER BY RAND() "
+                        + "LIMIT 1;";
+               
+                MySqlDataReader dataReader = dbConnector.ExecuteQuery(sql);
+                dataReader.Read();
+                word = dataReader.GetString("word");
+
+                dataReader.Close();
+
                 wordChar = word.ToCharArray();
 
             } while (wordChar.Length > maxLetters);
