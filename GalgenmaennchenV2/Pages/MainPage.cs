@@ -18,6 +18,8 @@ namespace GalgenmaennchenV2.Pages
         public MainPage()
         {
             InitializeComponent();
+            txtboxPasswort.PasswordChar = '*';
+            txtboxPasswort.MaxLength = 12;
         }
 
         private void signIn()
