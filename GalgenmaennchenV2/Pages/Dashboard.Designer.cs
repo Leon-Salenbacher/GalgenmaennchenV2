@@ -41,6 +41,7 @@ namespace GalgenmaennchenV2.Pages
             this.leaderboard = new System.Windows.Forms.GroupBox();
             this.lblLeaderboard = new System.Windows.Forms.Label();
             this.btnPlay = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelHeaderDashboard.SuspendLayout();
             this.leaderboard.SuspendLayout();
             this.SuspendLayout();
@@ -133,11 +134,23 @@ namespace GalgenmaennchenV2.Pages
             this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(427, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 33);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Leaderboard";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panelHeaderDashboard);
             this.Controls.Add(this.leaderboard);
             this.Controls.Add(this.btnPlay);
@@ -166,5 +179,6 @@ namespace GalgenmaennchenV2.Pages
         private System.Windows.Forms.GroupBox leaderboard;
         private System.Windows.Forms.Label lblLeaderboard;
         private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Label label1;
     }
 }
