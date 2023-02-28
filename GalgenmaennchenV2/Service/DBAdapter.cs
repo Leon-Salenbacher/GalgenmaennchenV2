@@ -14,7 +14,7 @@ namespace GalgenmaennchenV2.Service
 
         public DBAdapter()
         {
-            this.dbConnector = new MySqlConnector("galgenmaenchen");
+            this.dbConnector = new MySqlConnector_MariaDB("galgenmaenchen");
         }
     }
 }
