@@ -14,7 +14,7 @@ namespace GalgenmaennchenV2.Service
        
         public User getUserById(int userId)
         {
-            string sql = "SELECT ID, name FROM tbl_users WHERE ID = 1;";
+            string sql = "SELECT ID, name FROM tbl_users WHERE ID = " + userId +  ";";
 
             MySqlDataReader dataReader = dbConnector.ExecuteQuery(sql);
             dataReader.Read();

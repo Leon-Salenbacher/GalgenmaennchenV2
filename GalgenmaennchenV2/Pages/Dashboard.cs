@@ -32,7 +32,7 @@ namespace GalgenmaennchenV2.Pages
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            GamePage gamePage = new GamePage(1);
+            GamePage gamePage = new GamePage(this.userId);
             this.Hide();
             gamePage.ShowDialog();
             this.Close();

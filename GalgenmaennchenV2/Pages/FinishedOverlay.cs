@@ -72,7 +72,7 @@ namespace GalgenmaennchenV2.Pages
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard= new Dashboard(1);
+            Dashboard dashboard= new Dashboard(this.userID);
             this.Hide();
             this.Close();
             this.gamePage.Hide();
