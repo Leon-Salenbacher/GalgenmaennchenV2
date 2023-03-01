@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace GalgenmaennchenV2.Service
 {
+    /**
+     * Author: Leon Salenbacher
+     * Beinhaltet alle Funktionen für den User.
+     */
     class UserAdapter : DBAdapter
     {
        

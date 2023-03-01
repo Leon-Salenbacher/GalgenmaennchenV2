@@ -9,9 +9,15 @@ using GalgenmaennchenV2.Datenbanken;
 
 namespace GalgenmaennchenV2.Service
 {
+    /**
+     * Author: Leon Salenbacher
+     * Kollektet die Leaderboard daten und führt sie sortiert zusammen.
+     */
     class LeaderBoardAdapter : DBAdapter
     {
-
+        /**
+         * Kollektet alle Ratings grouped by User und returned eine Liste and Ratings
+         */
         public List<Rating> getAllRatings_groupedByUser()
         {
             String sql = "SELECT r.ID as ratingID, min(versuche) as highscore, "
@@ -47,6 +53,10 @@ namespace GalgenmaennchenV2.Service
             }
         }
 
+        /**
+         * Kollektet die top 10 Ratings grouped by User und
+         * returned eine Liste and Ratings 
+         */
         public List<Rating> getTop10Ratings_groupedByUser()
         {
             String sql = "SELECT r.ID as ratingID, min(versuche) as highscore, "
@@ -82,6 +92,10 @@ namespace GalgenmaennchenV2.Service
             }
         }
 
+        /**
+         * Convertiert eine Liste an Ratings in einen String
+         * um diesen auf der GUI auszugeben
+         */
         public String ratingsToString(List<Rating> ratings)
         {
             string ratingString = "";

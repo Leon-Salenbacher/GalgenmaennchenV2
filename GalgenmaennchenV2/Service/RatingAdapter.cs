@@ -8,9 +8,16 @@ using System.Threading.Tasks;
 
 namespace GalgenmaennchenV2.Service
 {
+    /**
+     * Author: Leon Salenbacher
+     * Beinhaltet alle Funktionen für die verarbeitung einzelner Ratings
+     */
     public class RatingAdapter : DBAdapter
     {
 
+        /**
+         * Erstellt ein neues Rating
+         */
         public void createRating(int userId, int fails, string word)
         {
             //needed???
@@ -27,6 +34,9 @@ namespace GalgenmaennchenV2.Service
             dbConnector.ExecuteNonQuery(sql);
         }
 
+        /**
+         * Returned den Highscore eines Users
+         */
         public Rating getHighScore(int userId)
         {
             string sql = "SELECT r.ID as ratingId, MIN(r.versuche) as versuche, r.word, u.ID as userId, u.name " +
