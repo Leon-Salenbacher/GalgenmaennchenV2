@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 
 namespace GalgenmaennchenV2.Service
 {
+
+    /**
+     * Author: Leon Salenbacher
+     * Regelt die Logik für das Spielen des Spiels Galgenmaennchen.
+     */
     public class GameAdapter : DBAdapter
     {
         public static int maxLetters = 10;
@@ -15,6 +20,10 @@ namespace GalgenmaennchenV2.Service
         public static int maxFails = 10;
         public Game game;
         private RatingAdapter ratingAdapter = new RatingAdapter();
+
+        /**
+         * Selected ein random wort aus der Datenbank
+         */
         private List<Letter> getWord()
         {
             string word;
@@ -23,7 +32,6 @@ namespace GalgenmaennchenV2.Service
 
             do
             {
-
                 string sql = " SELECT word FROM tbl_words "
                         + "ORDER BY RAND() "
                         + "LIMIT 1;";
@@ -33,7 +41,6 @@ namespace GalgenmaennchenV2.Service
                 word = dataReader.GetString("word");
 
                 dataReader.Close();
-
                 wordChar = word.ToCharArray();
 
             } while (wordChar.Length > maxLetters);
@@ -45,6 +52,9 @@ namespace GalgenmaennchenV2.Service
             return wordLetters;
         }
 
+        /**
+         * erstellt ein neues Objekt Game 
+         */
         public Game startNewGame()
         {
             Game newGame = new Game(getWord());
@@ -52,6 +62,10 @@ namespace GalgenmaennchenV2.Service
             return newGame;
         }
 
+        /**
+         * Convertiert die Liste wordLetters in einen String welcher auf der Gui ausgegeben werden kann.
+         * Es werden noch nicht erratene Buchstaben mit einem "_" ersetzt.
+         */
         public String getWordString()
         {
             List<Letter> wordLetters =  this.game.getWordLetters();
@@ -72,6 +86,10 @@ namespace GalgenmaennchenV2.Service
             return wordString;
         }
 
+        /**
+         * Prüft ob ein Buchstabe in dem Aktuellem wort vorhanden sind.
+         * returned dem entsprechend true oder false
+         */
         public bool proofLetter(char letter)
         {
             for (int i = 0; i < this.game.getWordLetters().Count(); i++)
@@ -100,6 +118,11 @@ namespace GalgenmaennchenV2.Service
             return false;
         }
 
+        /**
+         * Logik wenn buchstaben button gedrückt wird. 
+         * Added Fail wenn letter nicht in wort 
+         * und setzt buchstabe checked wenn buchstabe vorhanden.
+         */
         public Game move(char letter)
         {
             if (!this.game.getGameState().Equals(GameState.PLAYING))
@@ -123,6 +146,9 @@ namespace GalgenmaennchenV2.Service
             return this.game;
         }
 
+        /**
+         * Prüft den aktuellen GameState und ändert den GameState dem entsprechend auf "LOOSE" oder "WIN"
+         */
         public bool proofGameEnd()
         {
             if (this.game.getFails() >= maxFails -1 )
@@ -140,10 +166,13 @@ namespace GalgenmaennchenV2.Service
                 }
             }
             this.game.setGameState(GameState.WIN);
-            //TODO handle win 
             return true;
         }
 
+        /**
+         * Kümmert sich um das GameEnde und erstellt falls gewonnen 
+         * ein Rating mit benötigten versuchen und dem Wort.
+         */
         public void handleGameEnd(int userId)
         {
             if (this.game.getGameState() == GameState.PLAYING)
@@ -158,7 +187,9 @@ namespace GalgenmaennchenV2.Service
 
         }
 
-
+        /*
+         * Setzt alle gleichen Buchstaben auf checked 
+         */
         public Game checkEqualWords(char letter)
         {
             List<Letter> word = this.game.getWordLetters();
