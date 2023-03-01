@@ -10,7 +10,7 @@ namespace GalgenmaennchenV2.Service
 {
     public class GameAdapter : DBAdapter
     {
-        public static int maxLetters = 5;
+        public static int maxLetters = 10;
         public int currentFails = 0;
         public static int maxFails = 10;
         public Game game;
