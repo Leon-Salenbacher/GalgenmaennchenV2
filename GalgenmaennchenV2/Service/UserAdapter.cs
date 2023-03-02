@@ -15,7 +15,9 @@ namespace GalgenmaennchenV2.Service
      */
     class UserAdapter : DBAdapter
     {
-       
+        /**
+        * Selecting User by its ID 
+        */
         public User getUserById(int userId)
         {
             string sql = "SELECT ID, name FROM tbl_users WHERE ID = " + userId +  ";";
@@ -31,6 +33,9 @@ namespace GalgenmaennchenV2.Service
             return user;
         }
 
+        /**
+         * Selecting User by its Name
+         */
         public User getUserByName(string username)
         {
             string sql = "SELECT ID, name FROM tbl_users WHERE name = '" + username + "';";
@@ -46,6 +51,9 @@ namespace GalgenmaennchenV2.Service
             return user;
         }
 
+        /**
+         * proofing username and password
+         */
         public bool proofSignIn(string username, string password)
         {
             string sql = "SELECT ID, name, password FROM tbl_users WHERE name = '" + username + "';";
@@ -60,8 +68,8 @@ namespace GalgenmaennchenV2.Service
                     dataReader.GetString("password")
                     );
 
-            dataReader.Close();
-            return user.isPassword(password);
+                dataReader.Close();
+                return user.isPassword(password);
             }
             catch
             {

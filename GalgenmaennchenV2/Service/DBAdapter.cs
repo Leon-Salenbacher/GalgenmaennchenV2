@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 
 namespace GalgenmaennchenV2.Service
 {
-    public class DBAdapter
+    /**
+     * Author: Leon Salenbacher
+     * stellt sicher, das alle erbenden Klassen eine Datenbank verbindung besitzen.
+     */
+    public abstract class DBAdapter
     {
-
         protected MySqlConnector dbConnector;
 
         public DBAdapter()

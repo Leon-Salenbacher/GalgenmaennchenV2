@@ -20,7 +20,6 @@ namespace GalgenmaennchenV2.Service
          */
         public void createRating(int userId, int fails, string word)
         {
-            //needed???
             Rating rating = new Rating(
                 fails,
                 word,

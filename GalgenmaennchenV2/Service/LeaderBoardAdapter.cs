@@ -69,21 +69,19 @@ namespace GalgenmaennchenV2.Service
             List<Rating> allRatings = new List<Rating>();
             try
             {
-
-
-            while (dataReader.Read())
-            {
-                Rating rating = new Rating(
-                    dataReader.GetInt32("ratingID"),
-                    dataReader.GetInt32("highscore"),
-                    dataReader.GetString("word"),
-                    new User(
-                        dataReader.GetInt32("userID"),
-                        dataReader.GetString("username")
+                while (dataReader.Read())
+                {
+                    Rating rating = new Rating(
+                        dataReader.GetInt32("ratingID"),
+                        dataReader.GetInt32("highscore"),
+                        dataReader.GetString("word"),
+                        new User(
+                            dataReader.GetInt32("userID"),
+                            dataReader.GetString("username")
                         )
                     );
-                allRatings.Add(rating);
-            }
+                    allRatings.Add(rating);
+                }
                 return allRatings;
             }
             catch

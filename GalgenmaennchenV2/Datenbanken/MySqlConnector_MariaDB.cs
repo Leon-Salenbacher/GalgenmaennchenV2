@@ -7,14 +7,19 @@ using System.Threading.Tasks;
 
 namespace GalgenmaennchenV2.Datenbanken
 {
+    /**
+     * Author: Jonas Tran
+     * Stellt die verbindung zur Datenbank
+     */
     public class MySqlConnector_MariaDB : MySqlConnector
     {
+        //Variabless
         MySqlConnection dbVerbindung;
-        //Variables
         private string dbHost = "localhost";
         private string dbUser = "root";
         private string dbPassword = "";
         private string dbName;
+
         public MySqlConnector_MariaDB(string databaseName)
         {
             this.dbName = databaseName;
@@ -39,6 +44,7 @@ namespace GalgenmaennchenV2.Datenbanken
             get { return dbName; }
             set { dbName = value; }
         }
+
         private string ConnectionString
         {
             get
@@ -51,6 +57,10 @@ namespace GalgenmaennchenV2.Datenbanken
                 return stringBuilder.ConnectionString;
             }
         }
+
+        /**
+         * Opening database connection
+         */
         private MySqlCommand OpenConnection()
         {
             dbVerbindung = new MySqlConnection(this.ConnectionString);
@@ -59,10 +69,18 @@ namespace GalgenmaennchenV2.Datenbanken
             mysqlCommand.Connection = dbVerbindung;
             return mysqlCommand;
         }
+
+        /**
+         * Closing database connection
+         */
         private void CloseConnection()
         {
             dbVerbindung.Close();
         }
+
+        /**
+         * Testing Database connection
+         */
         public String TestConnection()
         {
             String msg = "DB-Verbindung erfolgreich";
@@ -81,6 +99,11 @@ namespace GalgenmaennchenV2.Datenbanken
             }
             return msg;
         }
+
+        /**
+         * Executing dml
+         * returning if its successful
+         */
         public int ExecuteNonQuery(String dml)
         {
             int retValue = -1;
@@ -90,6 +113,11 @@ namespace GalgenmaennchenV2.Datenbanken
             this.CloseConnection();
             return retValue;
         }
+
+        /**
+         * Executing sql
+         * Returning the result from database
+         */
         public MySqlDataReader ExecuteQuery(string sql)
         {
             MySqlDataReader datareader = null;
