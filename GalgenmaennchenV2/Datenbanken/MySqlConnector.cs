@@ -13,8 +13,21 @@ namespace GalgenmaennchenV2.Datenbanken
      */
     public interface MySqlConnector
     { 
+        /**
+         * Executing dml
+         * returning if its successful
+         */
         int ExecuteNonQuery(String dml);
+
+        /**
+         * Executing sql
+         * Returning the result from database
+         */
         MySqlDataReader ExecuteQuery(string sql);
+
+        /**
+         * Testing Database connection
+         */
         String TestConnection();
     }
 }
