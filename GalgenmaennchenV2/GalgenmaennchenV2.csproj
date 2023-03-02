@@ -50,6 +50,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datenbanken\MySqlConnector.cs" />
+    <Compile Include="Datenbanken\MySqlConnector_MariaDB.cs" />
+    <Compile Include="Pages\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FinishedOverlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FinishedOverlay.Designer.cs">
+      <DependentUpon>FinishedOverlay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\GamePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +74,12 @@
     <Compile Include="Objects\Letter.cs" />
     <Compile Include="Objects\Rating.cs" />
     <Compile Include="Objects\User.cs" />
+    <Compile Include="Pages\Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +93,12 @@
     <Compile Include="Service\LeaderBoardAdapter.cs" />
     <Compile Include="Service\RatingAdapter.cs" />
     <Compile Include="Service\UserAdapter.cs" />
+    <EmbeddedResource Include="Pages\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FinishedOverlay.resx">
+      <DependentUpon>FinishedOverlay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\GamePage.resx">
       <DependentUpon>GamePage.cs</DependentUpon>
     </EmbeddedResource>

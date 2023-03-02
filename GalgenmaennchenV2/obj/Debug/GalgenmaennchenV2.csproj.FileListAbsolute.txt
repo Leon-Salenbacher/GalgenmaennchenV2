@@ -21,3 +21,5 @@ C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo
 C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.csproj.CopyComplete
 C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.exe
 C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.pdb
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.Pages.Dashboard.resources
+C:\Users\leon\OneDrive\1 Schule\3. Jahr\1. BfK-S\6. Projekt-galgenmaennchen\repo\GalgenmaennchenV2\GalgenmaennchenV2\obj\Debug\GalgenmaennchenV2.Pages.FinishedOverlay.resources
