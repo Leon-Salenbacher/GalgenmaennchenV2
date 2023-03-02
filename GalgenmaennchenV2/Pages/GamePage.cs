@@ -12,6 +12,10 @@ using System.Windows.Forms;
 
 namespace GalgenmaennchenV2
 {
+    /*
+     * Author: Jonas Tran
+     * Spielseite Galgenmännchen
+     */
     public partial class GamePage : Form
     {
         List<Image> imageHangman;
@@ -52,18 +56,20 @@ namespace GalgenmaennchenV2
             
 
         }
-
+        //Verarbeitet eingegebenen Buchstaben
         private void proofLetter(char letter)
         {
             gameAdapter.move(letter);
             loadWordLbl(gameAdapter.getWordString());
             loadImg(gameAdapter.game.getFails());
+           // Wenn Spiel beendet wurde, wird der Endscreen geladen
             if (gameAdapter.proofGameEnd())
             {
                 loadEndScreen();
             }
         }
 
+   
         private void loadWordLbl(string text)
         {
             lbl.Text = text;
@@ -74,7 +80,7 @@ namespace GalgenmaennchenV2
         }
 
         private void loadEndScreen() {
-            //load gameEnd screen here
+            //Lädt Endscreen
             this.gameAdapter.handleGameEnd(this.userID);
             Form frmoverlay = new Form();
             try
@@ -102,18 +108,13 @@ namespace GalgenmaennchenV2
 
         }
 
-        private void btnTest_Click(object sender, EventArgs e)
-        {
-            countImage++;
-            imgHangman.BackgroundImage = imageHangman[countImage];
-
-        }
-
+        
+        // Grauer Balken: startet Animation
         private void panelHeaderHover(object sender, EventArgs e)
         {
             timer1.Start();
         }
-
+        // Grauer Balken: Header navigator, noch keine Funktion
         private void timerHeader(object sender, EventArgs e)
         {
             if (isCollapsed)

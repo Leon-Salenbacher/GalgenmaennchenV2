@@ -32,7 +32,6 @@ namespace GalgenmaennchenV2
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GamePage));
             this.imgHangman = new System.Windows.Forms.PictureBox();
-            this.btnTest = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnZ = new System.Windows.Forms.Button();
             this.btnY = new System.Windows.Forms.Button();
@@ -78,23 +77,11 @@ namespace GalgenmaennchenV2
             this.imgHangman.BackColor = System.Drawing.Color.WhiteSmoke;
             this.imgHangman.BackgroundImage = global::GalgenmaennchenV2.Properties.Resources.Stage1;
             this.imgHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgHangman.Location = new System.Drawing.Point(131, 65);
-            this.imgHangman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imgHangman.Location = new System.Drawing.Point(98, 53);
             this.imgHangman.Name = "imgHangman";
-            this.imgHangman.Size = new System.Drawing.Size(388, 346);
+            this.imgHangman.Size = new System.Drawing.Size(291, 281);
             this.imgHangman.TabIndex = 2;
             this.imgHangman.TabStop = false;
-            // 
-            // btnTest
-            // 
-            this.btnTest.Location = new System.Drawing.Point(545, 140);
-            this.btnTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(100, 28);
-            this.btnTest.TabIndex = 3;
-            this.btnTest.Text = "Test";
-            this.btnTest.UseVisualStyleBackColor = true;
-            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -134,14 +121,13 @@ namespace GalgenmaennchenV2
             this.tableLayoutPanel1.Controls.Add(this.btnC, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnB, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 562);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 457);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(629, 222);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(472, 180);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // btnZ
@@ -150,10 +136,9 @@ namespace GalgenmaennchenV2
             this.btnZ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnZ.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZ.ForeColor = System.Drawing.Color.DimGray;
-            this.btnZ.Location = new System.Drawing.Point(491, 152);
-            this.btnZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnZ.Location = new System.Drawing.Point(368, 123);
             this.btnZ.Name = "btnZ";
-            this.btnZ.Size = new System.Drawing.Size(60, 66);
+            this.btnZ.Size = new System.Drawing.Size(45, 54);
             this.btnZ.TabIndex = 25;
             this.btnZ.Text = "Z";
             this.btnZ.UseVisualStyleBackColor = true;
@@ -165,10 +150,9 @@ namespace GalgenmaennchenV2
             this.btnY.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnY.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnY.ForeColor = System.Drawing.Color.DimGray;
-            this.btnY.Location = new System.Drawing.Point(423, 152);
-            this.btnY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnY.Location = new System.Drawing.Point(317, 123);
             this.btnY.Name = "btnY";
-            this.btnY.Size = new System.Drawing.Size(60, 66);
+            this.btnY.Size = new System.Drawing.Size(45, 54);
             this.btnY.TabIndex = 24;
             this.btnY.Text = "Y";
             this.btnY.UseVisualStyleBackColor = true;
@@ -180,10 +164,9 @@ namespace GalgenmaennchenV2
             this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnX.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnX.ForeColor = System.Drawing.Color.DimGray;
-            this.btnX.Location = new System.Drawing.Point(355, 152);
-            this.btnX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnX.Location = new System.Drawing.Point(266, 123);
             this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(60, 66);
+            this.btnX.Size = new System.Drawing.Size(45, 54);
             this.btnX.TabIndex = 23;
             this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = true;
@@ -195,10 +178,9 @@ namespace GalgenmaennchenV2
             this.btnW.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnW.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnW.ForeColor = System.Drawing.Color.DimGray;
-            this.btnW.Location = new System.Drawing.Point(287, 152);
-            this.btnW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnW.Location = new System.Drawing.Point(215, 123);
             this.btnW.Name = "btnW";
-            this.btnW.Size = new System.Drawing.Size(60, 66);
+            this.btnW.Size = new System.Drawing.Size(45, 54);
             this.btnW.TabIndex = 22;
             this.btnW.Text = "W";
             this.btnW.UseVisualStyleBackColor = true;
@@ -210,10 +192,9 @@ namespace GalgenmaennchenV2
             this.btnV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnV.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnV.ForeColor = System.Drawing.Color.DimGray;
-            this.btnV.Location = new System.Drawing.Point(219, 152);
-            this.btnV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnV.Location = new System.Drawing.Point(164, 123);
             this.btnV.Name = "btnV";
-            this.btnV.Size = new System.Drawing.Size(60, 66);
+            this.btnV.Size = new System.Drawing.Size(45, 54);
             this.btnV.TabIndex = 21;
             this.btnV.Text = "V";
             this.btnV.UseVisualStyleBackColor = true;
@@ -225,10 +206,9 @@ namespace GalgenmaennchenV2
             this.btnU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnU.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnU.ForeColor = System.Drawing.Color.DimGray;
-            this.btnU.Location = new System.Drawing.Point(151, 152);
-            this.btnU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnU.Location = new System.Drawing.Point(113, 123);
             this.btnU.Name = "btnU";
-            this.btnU.Size = new System.Drawing.Size(60, 66);
+            this.btnU.Size = new System.Drawing.Size(45, 54);
             this.btnU.TabIndex = 20;
             this.btnU.Text = "U";
             this.btnU.UseVisualStyleBackColor = true;
@@ -240,10 +220,9 @@ namespace GalgenmaennchenV2
             this.btnT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnT.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnT.ForeColor = System.Drawing.Color.DimGray;
-            this.btnT.Location = new System.Drawing.Point(83, 152);
-            this.btnT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnT.Location = new System.Drawing.Point(62, 123);
             this.btnT.Name = "btnT";
-            this.btnT.Size = new System.Drawing.Size(60, 66);
+            this.btnT.Size = new System.Drawing.Size(45, 54);
             this.btnT.TabIndex = 19;
             this.btnT.Text = "T";
             this.btnT.UseVisualStyleBackColor = true;
@@ -255,10 +234,9 @@ namespace GalgenmaennchenV2
             this.btnS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnS.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS.ForeColor = System.Drawing.Color.DimGray;
-            this.btnS.Location = new System.Drawing.Point(4, 152);
-            this.btnS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnS.Location = new System.Drawing.Point(3, 123);
             this.btnS.Name = "btnS";
-            this.btnS.Size = new System.Drawing.Size(71, 66);
+            this.btnS.Size = new System.Drawing.Size(53, 54);
             this.btnS.TabIndex = 18;
             this.btnS.Text = "S";
             this.btnS.UseVisualStyleBackColor = true;
@@ -270,10 +248,9 @@ namespace GalgenmaennchenV2
             this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnR.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnR.ForeColor = System.Drawing.Color.DimGray;
-            this.btnR.Location = new System.Drawing.Point(559, 78);
-            this.btnR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnR.Location = new System.Drawing.Point(419, 63);
             this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(66, 66);
+            this.btnR.Size = new System.Drawing.Size(50, 54);
             this.btnR.TabIndex = 17;
             this.btnR.Text = "R";
             this.btnR.UseVisualStyleBackColor = true;
@@ -285,10 +262,9 @@ namespace GalgenmaennchenV2
             this.btnQ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnQ.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQ.ForeColor = System.Drawing.Color.DimGray;
-            this.btnQ.Location = new System.Drawing.Point(491, 78);
-            this.btnQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQ.Location = new System.Drawing.Point(368, 63);
             this.btnQ.Name = "btnQ";
-            this.btnQ.Size = new System.Drawing.Size(60, 66);
+            this.btnQ.Size = new System.Drawing.Size(45, 54);
             this.btnQ.TabIndex = 16;
             this.btnQ.Text = "Q";
             this.btnQ.UseVisualStyleBackColor = true;
@@ -300,10 +276,9 @@ namespace GalgenmaennchenV2
             this.btnP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnP.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnP.ForeColor = System.Drawing.Color.DimGray;
-            this.btnP.Location = new System.Drawing.Point(423, 78);
-            this.btnP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnP.Location = new System.Drawing.Point(317, 63);
             this.btnP.Name = "btnP";
-            this.btnP.Size = new System.Drawing.Size(60, 66);
+            this.btnP.Size = new System.Drawing.Size(45, 54);
             this.btnP.TabIndex = 15;
             this.btnP.Text = "P";
             this.btnP.UseVisualStyleBackColor = true;
@@ -315,10 +290,9 @@ namespace GalgenmaennchenV2
             this.btnO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnO.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnO.ForeColor = System.Drawing.Color.DimGray;
-            this.btnO.Location = new System.Drawing.Point(355, 78);
-            this.btnO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnO.Location = new System.Drawing.Point(266, 63);
             this.btnO.Name = "btnO";
-            this.btnO.Size = new System.Drawing.Size(60, 66);
+            this.btnO.Size = new System.Drawing.Size(45, 54);
             this.btnO.TabIndex = 14;
             this.btnO.Text = "O";
             this.btnO.UseVisualStyleBackColor = true;
@@ -330,10 +304,9 @@ namespace GalgenmaennchenV2
             this.btnN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnN.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnN.ForeColor = System.Drawing.Color.DimGray;
-            this.btnN.Location = new System.Drawing.Point(287, 78);
-            this.btnN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnN.Location = new System.Drawing.Point(215, 63);
             this.btnN.Name = "btnN";
-            this.btnN.Size = new System.Drawing.Size(60, 66);
+            this.btnN.Size = new System.Drawing.Size(45, 54);
             this.btnN.TabIndex = 13;
             this.btnN.Text = "N";
             this.btnN.UseVisualStyleBackColor = true;
@@ -345,10 +318,9 @@ namespace GalgenmaennchenV2
             this.btnM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnM.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnM.ForeColor = System.Drawing.Color.DimGray;
-            this.btnM.Location = new System.Drawing.Point(219, 78);
-            this.btnM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnM.Location = new System.Drawing.Point(164, 63);
             this.btnM.Name = "btnM";
-            this.btnM.Size = new System.Drawing.Size(60, 66);
+            this.btnM.Size = new System.Drawing.Size(45, 54);
             this.btnM.TabIndex = 12;
             this.btnM.Text = "M";
             this.btnM.UseVisualStyleBackColor = true;
@@ -360,10 +332,9 @@ namespace GalgenmaennchenV2
             this.btnL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnL.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnL.ForeColor = System.Drawing.Color.DimGray;
-            this.btnL.Location = new System.Drawing.Point(151, 78);
-            this.btnL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnL.Location = new System.Drawing.Point(113, 63);
             this.btnL.Name = "btnL";
-            this.btnL.Size = new System.Drawing.Size(60, 66);
+            this.btnL.Size = new System.Drawing.Size(45, 54);
             this.btnL.TabIndex = 11;
             this.btnL.Text = "L";
             this.btnL.UseVisualStyleBackColor = true;
@@ -375,10 +346,9 @@ namespace GalgenmaennchenV2
             this.btnK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnK.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnK.ForeColor = System.Drawing.Color.DimGray;
-            this.btnK.Location = new System.Drawing.Point(83, 78);
-            this.btnK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnK.Location = new System.Drawing.Point(62, 63);
             this.btnK.Name = "btnK";
-            this.btnK.Size = new System.Drawing.Size(60, 66);
+            this.btnK.Size = new System.Drawing.Size(45, 54);
             this.btnK.TabIndex = 10;
             this.btnK.Text = "K";
             this.btnK.UseVisualStyleBackColor = true;
@@ -390,10 +360,9 @@ namespace GalgenmaennchenV2
             this.btnJ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnJ.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJ.ForeColor = System.Drawing.Color.DimGray;
-            this.btnJ.Location = new System.Drawing.Point(4, 78);
-            this.btnJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnJ.Location = new System.Drawing.Point(3, 63);
             this.btnJ.Name = "btnJ";
-            this.btnJ.Size = new System.Drawing.Size(71, 66);
+            this.btnJ.Size = new System.Drawing.Size(53, 54);
             this.btnJ.TabIndex = 9;
             this.btnJ.Text = "J";
             this.btnJ.UseVisualStyleBackColor = true;
@@ -405,10 +374,9 @@ namespace GalgenmaennchenV2
             this.btnI.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnI.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnI.ForeColor = System.Drawing.Color.DimGray;
-            this.btnI.Location = new System.Drawing.Point(559, 4);
-            this.btnI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnI.Location = new System.Drawing.Point(419, 3);
             this.btnI.Name = "btnI";
-            this.btnI.Size = new System.Drawing.Size(66, 66);
+            this.btnI.Size = new System.Drawing.Size(50, 54);
             this.btnI.TabIndex = 8;
             this.btnI.Text = "I";
             this.btnI.UseVisualStyleBackColor = true;
@@ -420,10 +388,9 @@ namespace GalgenmaennchenV2
             this.btnH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnH.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnH.ForeColor = System.Drawing.Color.DimGray;
-            this.btnH.Location = new System.Drawing.Point(491, 4);
-            this.btnH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnH.Location = new System.Drawing.Point(368, 3);
             this.btnH.Name = "btnH";
-            this.btnH.Size = new System.Drawing.Size(60, 66);
+            this.btnH.Size = new System.Drawing.Size(45, 54);
             this.btnH.TabIndex = 7;
             this.btnH.Text = "H";
             this.btnH.UseVisualStyleBackColor = true;
@@ -435,10 +402,9 @@ namespace GalgenmaennchenV2
             this.btnG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnG.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnG.ForeColor = System.Drawing.Color.DimGray;
-            this.btnG.Location = new System.Drawing.Point(423, 4);
-            this.btnG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnG.Location = new System.Drawing.Point(317, 3);
             this.btnG.Name = "btnG";
-            this.btnG.Size = new System.Drawing.Size(60, 66);
+            this.btnG.Size = new System.Drawing.Size(45, 54);
             this.btnG.TabIndex = 6;
             this.btnG.Text = "G";
             this.btnG.UseVisualStyleBackColor = true;
@@ -450,10 +416,9 @@ namespace GalgenmaennchenV2
             this.btnF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnF.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnF.ForeColor = System.Drawing.Color.DimGray;
-            this.btnF.Location = new System.Drawing.Point(355, 4);
-            this.btnF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnF.Location = new System.Drawing.Point(266, 3);
             this.btnF.Name = "btnF";
-            this.btnF.Size = new System.Drawing.Size(60, 66);
+            this.btnF.Size = new System.Drawing.Size(45, 54);
             this.btnF.TabIndex = 5;
             this.btnF.Text = "F";
             this.btnF.UseVisualStyleBackColor = true;
@@ -465,10 +430,9 @@ namespace GalgenmaennchenV2
             this.btnE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnE.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnE.ForeColor = System.Drawing.Color.DimGray;
-            this.btnE.Location = new System.Drawing.Point(287, 4);
-            this.btnE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnE.Location = new System.Drawing.Point(215, 3);
             this.btnE.Name = "btnE";
-            this.btnE.Size = new System.Drawing.Size(60, 66);
+            this.btnE.Size = new System.Drawing.Size(45, 54);
             this.btnE.TabIndex = 4;
             this.btnE.Text = "E";
             this.btnE.UseVisualStyleBackColor = true;
@@ -480,10 +444,9 @@ namespace GalgenmaennchenV2
             this.btnD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnD.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnD.ForeColor = System.Drawing.Color.DimGray;
-            this.btnD.Location = new System.Drawing.Point(219, 4);
-            this.btnD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnD.Location = new System.Drawing.Point(164, 3);
             this.btnD.Name = "btnD";
-            this.btnD.Size = new System.Drawing.Size(60, 66);
+            this.btnD.Size = new System.Drawing.Size(45, 54);
             this.btnD.TabIndex = 3;
             this.btnD.Text = "D";
             this.btnD.UseVisualStyleBackColor = true;
@@ -495,10 +458,9 @@ namespace GalgenmaennchenV2
             this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnC.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnC.ForeColor = System.Drawing.Color.DimGray;
-            this.btnC.Location = new System.Drawing.Point(151, 4);
-            this.btnC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnC.Location = new System.Drawing.Point(113, 3);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(60, 66);
+            this.btnC.Size = new System.Drawing.Size(45, 54);
             this.btnC.TabIndex = 2;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
@@ -510,10 +472,9 @@ namespace GalgenmaennchenV2
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(4, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 66);
+            this.button1.Size = new System.Drawing.Size(53, 54);
             this.button1.TabIndex = 1;
             this.button1.Text = "A";
             this.button1.UseVisualStyleBackColor = true;
@@ -525,10 +486,9 @@ namespace GalgenmaennchenV2
             this.btnB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnB.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnB.ForeColor = System.Drawing.Color.DimGray;
-            this.btnB.Location = new System.Drawing.Point(83, 4);
-            this.btnB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnB.Location = new System.Drawing.Point(62, 3);
             this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(60, 66);
+            this.btnB.Size = new System.Drawing.Size(45, 54);
             this.btnB.TabIndex = 0;
             this.btnB.Text = "B";
             this.btnB.UseVisualStyleBackColor = true;
@@ -545,30 +505,27 @@ namespace GalgenmaennchenV2
             this.panelHeaderSpiel.Controls.Add(this.btnMenuSpiel);
             this.panelHeaderSpiel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeaderSpiel.Location = new System.Drawing.Point(0, 0);
-            this.panelHeaderSpiel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelHeaderSpiel.MaximumSize = new System.Drawing.Size(663, 119);
-            this.panelHeaderSpiel.MinimumSize = new System.Drawing.Size(663, 37);
+            this.panelHeaderSpiel.MaximumSize = new System.Drawing.Size(497, 97);
+            this.panelHeaderSpiel.MinimumSize = new System.Drawing.Size(497, 30);
             this.panelHeaderSpiel.Name = "panelHeaderSpiel";
-            this.panelHeaderSpiel.Size = new System.Drawing.Size(663, 37);
+            this.panelHeaderSpiel.Size = new System.Drawing.Size(497, 30);
             this.panelHeaderSpiel.TabIndex = 7;
             this.panelHeaderSpiel.MouseHover += new System.EventHandler(this.panelHeaderHover);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(16, 42);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(12, 34);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 34);
+            this.button2.Size = new System.Drawing.Size(119, 28);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // btnMenuSpiel
             // 
-            this.btnMenuSpiel.Location = new System.Drawing.Point(237, 42);
-            this.btnMenuSpiel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenuSpiel.Location = new System.Drawing.Point(178, 34);
             this.btnMenuSpiel.Name = "btnMenuSpiel";
-            this.btnMenuSpiel.Size = new System.Drawing.Size(159, 34);
+            this.btnMenuSpiel.Size = new System.Drawing.Size(119, 28);
             this.btnMenuSpiel.TabIndex = 0;
             this.btnMenuSpiel.Text = "button1";
             this.btnMenuSpiel.UseVisualStyleBackColor = true;
@@ -576,11 +533,9 @@ namespace GalgenmaennchenV2
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lbl);
-            this.groupBox1.Location = new System.Drawing.Point(16, 444);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 361);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(629, 84);
+            this.groupBox1.Size = new System.Drawing.Size(472, 68);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Load);
@@ -588,26 +543,24 @@ namespace GalgenmaennchenV2
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(271, 25);
-            this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Location = new System.Drawing.Point(182, 16);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(46, 17);
+            this.lbl.Size = new System.Drawing.Size(93, 33);
             this.lbl.TabIndex = 0;
             this.lbl.Text = "label2";
             // 
             // GamePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(661, 837);
+            this.ClientSize = new System.Drawing.Size(496, 680);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelHeaderSpiel);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.btnTest);
             this.Controls.Add(this.imgHangman);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GamePage";
             this.Text = "GamePage";
             ((System.ComponentModel.ISupportInitialize)(this.imgHangman)).EndInit();
@@ -622,7 +575,6 @@ namespace GalgenmaennchenV2
         #endregion
 
         private System.Windows.Forms.PictureBox imgHangman;
-        private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnZ;
         private System.Windows.Forms.Button btnY;

@@ -11,6 +11,11 @@ using GalgenmaennchenV2.Service;
 
 namespace GalgenmaennchenV2.Pages
 {
+    /*
+     * Author: Jonas Tran
+     * Hauptmenü Oberfläche
+     */
+
     public partial class Dashboard : Form
     {
         private LeaderBoardAdapter leaderBoardAdapter = new LeaderBoardAdapter();
@@ -26,12 +31,15 @@ namespace GalgenmaennchenV2.Pages
 
         private void initialize()
         {
+            //Generiert ein Label und holt sich den Namen
             lblLeaderboard.Text = leaderBoardAdapter.ratingsToString(leaderBoardAdapter.getTop10Ratings_groupedByUser());
             lblUsername.Text = userAdapter.getUserById(this.userId).getName();
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
+            //Verlinkung zur Spielseite
+
             GamePage gamePage = new GamePage(this.userId);
             this.Hide();
             gamePage.ShowDialog();
@@ -42,6 +50,7 @@ namespace GalgenmaennchenV2.Pages
             //timer1.Start();
         }
 
+        // Grauer Balken: Header navigator, noch keine Funktion
         private void timerHeader(object sender, EventArgs e)
         {
             if (isCollapsed)
@@ -75,6 +84,7 @@ namespace GalgenmaennchenV2.Pages
         }
         private void leaderboard_load(object sender, EventArgs e)
         {
+            //Generiert ein Label für die Bestenliste
             Label lblLeaderboard = new Label();
             lblLeaderboard.Text = leaderBoardAdapter.ratingsToString(leaderBoardAdapter.getTop10Ratings_groupedByUser());
         }

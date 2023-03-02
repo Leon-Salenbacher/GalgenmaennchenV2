@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace GalgenmaennchenV2.Pages
 {
+    /*
+     * Author: Jonas Tran
+     * Anmeldefenster
+     */
     public partial class MainPage : Form
     {
         private UserAdapter userAdapter = new UserAdapter();
@@ -18,13 +22,14 @@ namespace GalgenmaennchenV2.Pages
         public MainPage()
         {
             InitializeComponent();
+            //Verdeckte Passworteingabe
             txtboxPasswort.PasswordChar = '*';
             txtboxPasswort.MaxLength = 12;
         }
 
         private void signIn()
         {
-
+            //Verarbeitet Anmeldedaten und lädt anschließend Dashboard oder gibt ein Fehler
 
             if (userAdapter.proofSignIn(txtName.Text, txtboxPasswort.Text))
             {
@@ -39,6 +44,7 @@ namespace GalgenmaennchenV2.Pages
             }
         }
 
+  
         private void btnAnmelden_Click(object sender, EventArgs e)
         {
             signIn();

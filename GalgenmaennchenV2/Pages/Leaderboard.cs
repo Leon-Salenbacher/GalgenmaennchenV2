@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace GalgenmaennchenV2.Pages
 {
+    /*
+     * Author: Jonas Tran
+     * Noch keine Funktion
+     */
     public partial class Leaderboard : Form
     {
         public Leaderboard()
